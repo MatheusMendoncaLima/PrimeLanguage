@@ -28,6 +28,12 @@ header ul{
 }
 header li{
     display: inline-block;
+    margin-left: 25px;
+
+}
+
+header li a{
+    display: block;
     padding: 17px;
     border-radius: 15px;
     width: 125px;
@@ -35,17 +41,16 @@ header li{
     line-height: 0px;
     font-weight: bolder;
     font-size: larger;
-    margin-left: 25px;
+    text-decoration: none;
 }
 
-
-header li.filled{
+header li a.filled{
     color: white;
     background-color: #6EBEAF;
     border: 1px solid black;
 }
 
-header li.unfilled{
+header li a.unfilled{
     border: 1px solid black;
     color: #65558F;
 
@@ -194,7 +199,13 @@ footer td.title#support{
 
 footer td.subtitle{
     text-align: left;
-    font-size: 25px;
+    font-size: 20px;
+
 
 }
 
+a.noDecoration{
+    text-decoration: none;
+    color: black;
+
+}
