@@ -154,6 +154,109 @@ fieldset.whiteTextBalloon h2{
     
 }
 
+div.balloons{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    margin-top: 100px;
+}
+
+fieldset.blueTextBalloon, fieldset.greenTextBalloon{
+    width: 30%;
+    border: none;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: inline-block;
+    margin-bottom: 300px;
+    margin-top: 150px;
+    font-size: 38px;
+    line-height: normal;
+    border-bottom-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+
+}
+
+
+fieldset.greenTextBalloon{
+    background-color: #AFF4C6;
+    
+
+}
+
+fieldset.blueTextBalloon{
+    background-color: #94BFFF;
+    
+    
+
+}
+
+.alignToRight{  
+    text-align: right;
+    float: right;
+    border-top-right-radius: 90px;
+    padding-left: 0px;
+
+
+}
+
+.alignToLeft{
+    text-align: left;
+    margin-left: 15%;
+    margin-right: auto;
+    border-top-left-radius: 90px;
+    padding-right: 0px;
+
+
+
+}
+
+section#instructors{
+    width: 100%;
+
+    background-image: url(imgs/background/instructor.png);
+    background-repeat: no-repeat;
+    background-position-x: calc(77%);
+    background-position-y: 10%;
+    background-size: 700px;
+}
+
+section#interactiveExercises{
+    width: 100%;
+
+    background-image: url(imgs/background/ia.png);
+    background-repeat: no-repeat;
+    background-position-x: 20%;
+    background-position-y: 0px;
+    background-size: 700px;
+    display: block;
+    float: right;
+
+}
+
+section#ia{
+    width: 100%;
+    background-image: url(imgs/background/ia.png);
+    background-repeat: no-repeat;
+    background-position-x: calc(77%);
+    background-position-y: 90%;
+    background-size: 700px;
+
+}
+
+
+section#prizes{
+    width: 100%;
+
+    background-image: url(imgs/background/prizes.png);
+    background-repeat: no-repeat;
+    background-position-x: 20%;
+    background-position-y: 0px;
+    background-size: 700px;
+    float: right;
+}
+
 
 footer{
     background-color: #7DE5A0;
@@ -162,7 +265,7 @@ footer{
     padding-top: 40px;
     display: block;
     position: absolute;
-
+    transform: translate();
     background-image: url(imgs/background/logo_black.png), url(imgs/background/microsoft_logo_black.png), url(imgs/background/cps_logo_black.png),
     url(imgs/background/cisco_logo_black.png), url(imgs/background/ibm_logo_black.png), url(imgs/background/cambridge_logo_black.png);
     background-position-x:  100%, 10%, 28%, 50%, 74%, 96%;
