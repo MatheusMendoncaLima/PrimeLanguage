@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
     <div class="container">
         <header>
             <nav>
                 <ul>
-                    <li ><a class="filled" href="">Registrar</a></li>
+                    <li ><a class="filled" href="register.html">Registrar</a></li>
                     <li ><a class="unfilled" href="">Entrar</a></li>
                 </ul>
             </nav>
@@ -19,42 +19,61 @@
 
         <main>
             <div id="blue">
-                <a id="startnowGreen" href="">Comece agora!</a>
             
-            <fieldset class="whiteTextBalloon">
+            <div class="whiteTextBalloon">
                 <h1>Aprenda com facilidade, se expresse com confiança e alcance o mundo sem barreiras.</h1>
                 <h2>Cursos online com atividades interativas, desafios diários e progresso visível. Aprenda no seu ritmo, de qualquer lugar!</h2>
-            </fieldset>
+            </div>
+            <a id="startnowGreen" href="register.html">Comece agora!</a>
+
             </div >
+
+                <div class="languages">
+                    <div class="language"><a href="register.html?language=english"><img src="imgs/flags/english.png" alt=""></a></div>
+                    <div class="language"><a href="register.html?language=chinese"><img src="imgs/flags/chinese.png" alt=""></a></div>
+                    <div class="language"><a href="register.html?language=french"><img src="imgs/flags/french.png" alt=""></a></div>
+                    <div class="language"><a href="register.html?language=german"><img src="imgs/flags/german.png" alt=""></a></div>
+                    <div class="language"><a href="register.html?language=japanese"><img src="imgs/flags/japanese.png" alt=""></a></div>
+                    <div class="language"><a href="register.html?language=spanish"><img src="imgs/flags/spanish.png" alt=""></a></div>
+                    <div class="language"><a href="register.html?language=korean"><img src="imgs/flags/korean.png" alt=""></a></div>
+                    <div class="language"><a href="register.html?language=italian"><img src="imgs/flags/italian.png" alt=""></a></div>
+                    <div class="language"><a href="register.html?language=russian"><img src="imgs/flags/russian.png" alt=""></a></div>
+
+
+                </div>
+                <button id="btnLeft" onclick="left()"><</button>
+                <button id="btnRight" onclick="right()">></button>
+
+
                 <h1 class="title">ESCOLHA AGORA SEU NOVO IDIOMA!</h1>
                 <div class="balloons">
 
                 <section id="instructors">
-                <fieldset class="blueTextBalloon alignToLeft">
+                <div class="blueTextBalloon alignToLeft">
                     <p>Professores capacitados e formados te guiarão em cada passo para dominar o mundo dos idiomas!</p>
-                </fieldset>
+                </div>
                 </section>
                 <section id="interactiveExercises">
-                <fieldset class="greenTextBalloon alignToRight">
+                <div class="greenTextBalloon alignToRight">
                     <p>Oferecemos exercícios interativos, jogos de palavras, quizzes e desafios diários para tornar o aprendizado eficaz e empolgante.</p>
-                </fieldset>
+                </div>
                 </section>
                 <section id="ia">
-                <fieldset class="blueTextBalloon alignToLeft">
+                <div class="blueTextBalloon alignToLeft">
                     <p>Com nossas otimizações por IA, aproveite o melhor do nosso ensino e aproveite a experiência inovadora da Prime! </p>
-                </fieldset>
+                </div>
                 </section>
                 <section id="prizes">
-                <fieldset class="greenTextBalloon alignToRight">
+                <div class="greenTextBalloon alignToRight">
                     <p> Ganhe medalhas, suba de nível, desbloqueie conquistas exclusivas e acumule pontos para trocar por benefícios especiais.</p>
-                </fieldset>
+                </div>
                 </section>    
                 </div>
                 <h1 class="title">APRENDA ONDE E QUANDO QUISER</h1>
                 <h2 class="subtitle">Está pronto para começar? Inscreva-se agora e de o primeiro passa rumo à fluência! Desafie-se, divirta-se e veja seu progreço decolar</h2>
     
 
-                <a id="startnowBlue" href="">Comece Já!</a>
+                <a id="startnowBlue" href="register.html">Comece Já!</a>
 
 
 
@@ -137,6 +156,6 @@
 
     </div>
 </body>
-
+<script src="scripts/carrousel.js"></script>
 
 </html>

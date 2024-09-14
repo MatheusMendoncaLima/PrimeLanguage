@@ -1,0 +1,553 @@
+@charset "utf-8";
+
+:root{
+    --prevBarValue: 5%;
+    --barValue: 5%;
+
+    --displayStep1: none;
+    --displayStep2: none;
+    --displayStep3: none;
+    --displayStep4: none;
+
+    --backgroundVisible: 0; 
+    --prevBackgroundPosX: 1000px;
+    --prevBackgroundPosY: 100px;
+    --backgroundPosX: 1000px;
+    --backgroundPosY: 100px;
+
+}
+
+body{
+    margin-top: -8px;
+    margin-left: 0px;
+    width: 100%;
+    height: 100%;
+    background-position-x: var(--prevBackgroundPosX);
+    background-position-y: var(--prevBackgroundPosY);
+
+    background-image: url("../imgs/background/background_register.png");
+    background-repeat: no-repeat;
+    animation: bgPosition 1s ease-in forwards 0s;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275)
+
+}
+
+@keyframes bgPosition {
+    100% {
+        background-position-x: var(--backgroundPosX);
+        background-position-y: var(--backgroundPosY);
+    }
+}
+
+
+
+header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    box-shadow: black 0px -5px 30px 0px  ;
+    margin-bottom: 0px;
+    background-color: white;
+    
+}
+
+header ul{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 8px;
+    list-style-type: none;
+    float: right;
+
+}
+header li{
+    display: inline-block;
+    margin-left: 25px;
+
+}
+
+header li a{
+    display: block;
+    padding: 17px;
+    border-radius: 15px;
+    width: 125px;
+    text-align: center;
+    line-height: 0px;
+    font-weight: bolder;
+    font-size: larger;
+    text-decoration: none;
+}
+
+header li a.filled{
+    color: white;
+    background-color: #6EBEAF;
+    border: 1px solid black;
+}
+
+header li a.unfilled{
+    border: 1px solid black;
+    color: #65558F;
+}
+header li a.unfilled:hover{
+    border: 1px solid black;
+    color: #ffffff;
+    background-color: #65558F;
+}
+
+/*step1*/
+
+
+.table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+    border-collapse: separate;
+    border-spacing: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: -500px;
+
+    width: 750px;
+    height: calc(110dvh /2);
+
+    overflow: hidden;
+    /*box-shadow: rgb(202, 202, 202) 0px 0px 3px 1px;*/
+
+}
+
+.containerStep1 .table{
+    overflow-y: scroll;
+
+}
+
+.column{
+    display: inline;
+}
+.column a{
+
+
+    display: inline-block;
+    width: 190px;
+    height: 180px;
+    border-radius: 30px;
+    text-align: center;
+
+
+    border: 1px solid black;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-bottom: 30px;
+    background-color: white;
+    /*box-shadow: rgb(122, 122, 122) 06px 06px 10px 0.5px;*/
+
+
+}
+
+.column a:hover{
+    background-color: #eefeff;
+}
+
+a img{
+
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: 25%, 25%;
+    border-radius: 100000px;
+    border: 5px solid rgb(255, 255, 255);
+
+    margin-top: 30px;
+    margin-bottom: -10px;
+
+    box-shadow: rgb(202, 202, 202) 2px 5px 3px 1px;
+
+}
+
+a h2{
+    width: 100%;
+    color: black;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+}
+
+h1{
+    
+    margin-top: 5%; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 300%;
+    margin-bottom: 10%;
+}
+
+.containerStep1 h1{
+    margin-bottom: 7%;
+}
+
+h2{
+    float: left;
+}
+#logo{
+    margin-top: 10px;
+    width: 75px;
+    height: 50px;
+}
+.nome{
+    margin-bottom: 3px;
+}
+
+
+
+
+/* step2 */
+div.containerStep2{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.login{
+    margin-top: 2%;
+    width: 50%;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+}
+
+.space_text{
+    position: relative;
+    margin-bottom: 1%;
+    float: right;
+    margin-left: 100%;
+    border: none;
+    width: 90%;
+    
+    margin-right: 3%;
+
+
+}
+
+.texto {
+    position: relative;
+    padding: 15px;
+    outline: none;
+    border-radius: 20px;
+    font-size: 100%;
+    width: 90%;
+    height: 25%;
+
+    box-shadow: gray 3px 3px 5px 1px;
+}
+
+.nome{
+    color: #383838;
+    margin-bottom: -1px;
+    margin-left: 5px;
+    font-size: 150%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text_left{
+    
+    display: inline;
+
+}
+
+#boxes{
+    position: relative;
+    width: 50%;
+    float: right;
+}
+
+
+
+h1#novo_idioma{
+    position: relative;
+    float: left;
+    width: 40%;
+    font-size: 250%;
+
+    margin-left: 50px;
+
+}
+
+
+#idioma{
+    margin-top: 7%;
+    margin-left: 50%;
+    width: 60px;
+    height: 60px;
+
+    object-fit: cover;
+    object-position: 25%, 25%;
+    border-radius: 100000px;
+    border: 5px solid rgb(255, 255, 255);
+
+
+
+    box-shadow: rgb(202, 202, 202) 2px 5px 3px 1px;
+
+
+
+    
+    transform: translateX(-100%);
+
+
+}
+
+#languageHello{
+    width: fit-content;
+    margin-left: 50%;
+    transform: translateX(25%);
+    margin-top: -60px;
+    font-size: 32px;
+}
+
+#logo{
+    height: 50px;
+}
+
+.botao { 
+
+    background-color: #AFF4C6;
+    padding: 15px;
+    font-size: 30px;
+    border: none;
+    width: 40%;
+    border-radius: 15px;
+    color: #0F4E05;
+    cursor: pointer;
+    margin-top: 15%;
+    margin-left: 50%;
+    line-height: 20px;
+    transform: translateX(-50%);
+    box-shadow: rgb(187, 187, 187) 1px 5px 3px 2px;
+
+}
+.botao:hover {
+    box-shadow: rgb(187, 187, 187) 1px 3px 1px 1px;
+    transition: 125ms;
+
+}
+
+#almostTitle{
+    margin-top: 5%;
+    margin-bottom: -5%;
+}
+
+div.bar{
+    position: absolute;
+    display: block;
+    height: 2.25dvw;
+    width: 50dvw;
+    border-radius: 150px;
+    background-color: rgb(224, 224, 224);
+    bottom: 10%;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+div.barValue{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: var(--prevBarValue);
+    border-radius: 150PX;
+    background-color: #6EBEAF;
+    animation: barValue 2s ease-in forwards 0s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+@keyframes barValue{
+    100% {
+        width: var(--barValue);
+
+    }
+}
+
+
+
+
+div.containerStep1, div.containerStep1.table{
+    transition: 1s;
+    display:var(--displayStep1);
+}
+
+div.containerStep2, div.text_left{
+    transition: 1s;
+    display:var(--displayStep2);
+}
+
+div.containerStep3, div.containerStep3.table{
+    transition: 1s;
+    display:var(--displayStep3);
+}
+
+div.containerStep4, div.containerStep4.table{
+    transition: 1s;
+    display:var(--displayStep4);
+}
+
+body{
+    background-size: var(--backgroundVisible);
+}
+
+
+@media screen and (max-width:1079px) {
+
+
+    .containerStep1 h1{
+        margin-top: 15%;
+    }
+    #idioma{
+        margin-top: 15%;
+    
+    
+    }
+    
+    .botao{
+        width: 100%;
+    }
+
+
+    .containerStep2 #boxes{
+        width: 100%;
+    }
+
+    .containerStep2 .texto{
+        font-size: 150%
+    }
+
+    .containerStep2 .nome{
+        font-size: 200%;
+    }
+
+    .containerStep2 h1#novo_idioma{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: auto;
+        font-size: 300%;
+    }
+
+    
+
+    div.bar{
+        height: 5dvw;
+        width: 75dvw;
+    }
+
+
+
+}
+
+@media screen and (max-width:600px) {
+
+    .table{
+        height: 55vh;
+        width: 70%;
+        margin-left: auto;
+
+    }
+
+    .containerStep1 a h2{
+        display: none;
+        width: 100%;
+
+        font-size: 20px;
+    }
+
+    .containerStep1 h1{
+        font-size: 32px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .table a{
+        width: 125px;
+        height: 125px;
+        margin-right: 5px;
+        
+    }
+    .containerStep1 .table a{
+        width: 120px;
+        height: 110px;
+        margin-right: 5px;
+        
+    }
+
+    .containerStep4 .table{
+        width: 150px;
+        margin-right: auto;
+        
+    }
+
+    .containerStep4 .table a{
+        width: 140px;
+        height: 130px;
+        margin-right: 5px;
+        
+    }
+
+    div.bar{
+        height: 8dvw;
+        width: 90dvw;
+    }
+    a img{
+
+        width: 45px;
+        height: 45px;
+    
+        margin-top: 10%;
+        margin-bottom: -20px;
+        
+    }
+
+    .containerStep1 a img{
+
+        width: 60px;
+        height: 60px;
+    
+        margin-top: 15%;
+        margin-bottom: -20px;
+        
+    }
+
+
+
+    #idioma{
+        margin-top: 30%;
+    
+    
+    }
+ 
+    .containerStep2 .login{
+        width: 90%;
+    }
+    
+    .containerStep2 .texto{
+        font-size: 100%
+    }
+
+    .containerStep2 .nome{
+        font-size: 150%;
+    }
+
+    .containerStep2 h1#novo_idioma{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: auto;
+        font-size: 175%;
+    }
+
+    #almostTitle{
+        margin-top: 20%;
+        margin-bottom: -15px;
+    }
+
+    
+
+}
