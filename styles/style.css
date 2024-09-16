@@ -27,6 +27,11 @@ header{
     box-shadow: black 0px -5px 30px 0px  ;
     margin-bottom: 0px;
     background-color: white;
+
+    background-image: url("../imgs/icons/prime_language.png");
+    background-repeat: no-repeat;
+    background-position-x: 15%;
+    background-size: 75px;
     
 }
 

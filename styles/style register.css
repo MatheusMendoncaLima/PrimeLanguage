@@ -8,12 +8,15 @@
     --displayStep2: none;
     --displayStep3: none;
     --displayStep4: none;
+    --displayStep5: none;
+
 
     --backgroundVisible: 0; 
     --prevBackgroundPosX: 1000px;
     --prevBackgroundPosY: 100px;
     --backgroundPosX: 1000px;
     --backgroundPosY: 100px;
+
 
 }
 
@@ -22,6 +25,8 @@ body{
     margin-left: 0px;
     width: 100%;
     height: 100%;
+
+
     background-position-x: var(--prevBackgroundPosX);
     background-position-y: var(--prevBackgroundPosY);
 
@@ -50,7 +55,14 @@ header{
     margin-bottom: 0px;
     background-color: white;
     
-}
+
+    background-image: url("../imgs/icons/prime_language.png");
+    background-repeat: no-repeat;
+    background-position-x: 15%;
+    background-size: 50px;
+
+
+} 
 
 header ul{
     margin-left: 15%;
@@ -147,6 +159,10 @@ header li a.unfilled:hover{
 }
 
 a img{
+    margin-top: 30px;
+}
+
+.containerStep1 a img{
 
     width: 60px;
     height: 60px;
@@ -177,7 +193,8 @@ h1{
     margin-right: auto;
     text-align: center;
     font-size: 300%;
-    margin-bottom: 10%;
+    margin-bottom: 10dvh;
+    width: 50%;
 }
 
 .containerStep1 h1{
@@ -200,6 +217,10 @@ h2{
 
 
 /* step2 */
+
+
+
+
 div.containerStep2{
     display: none;
     width: 100%;
@@ -250,7 +271,6 @@ div.containerStep2{
 }
 
 .text_left{
-    
     display: inline;
 
 }
@@ -270,6 +290,7 @@ h1#novo_idioma{
     font-size: 250%;
 
     margin-left: 50px;
+    margin-bottom: -50%;
 
 }
 
@@ -309,17 +330,20 @@ h1#novo_idioma{
     height: 50px;
 }
 
+
+
 .botao { 
 
     background-color: #AFF4C6;
     padding: 15px;
     font-size: 30px;
     border: none;
-    width: 40%;
     border-radius: 15px;
     color: #0F4E05;
     cursor: pointer;
-    margin-top: 15%;
+
+    width: 40%;
+    margin-top: 10dvh;
     margin-left: 50%;
     line-height: 20px;
     transform: translateX(-50%);
@@ -330,6 +354,17 @@ h1#novo_idioma{
     box-shadow: rgb(187, 187, 187) 1px 3px 1px 1px;
     transition: 125ms;
 
+}
+
+.botao#start{
+    margin-top: 25dvh;
+    border-radius: 150px;
+    text-align: center;
+    display: block;
+    width: 25%;
+    padding: 60px;
+    text-decoration: none;
+    font-weight: 1000;
 }
 
 #almostTitle{
@@ -348,6 +383,8 @@ div.bar{
 
     left: 50%;
     transform: translateX(-50%);
+
+    border: 3px solid white;
 }
 
 div.barValue{
@@ -392,15 +429,32 @@ div.containerStep4, div.containerStep4.table{
     display:var(--displayStep4);
 }
 
+div.containerStep5{
+    transition: 1s;
+    display:var(--displayStep5);
+}
+
 body{
-    background-size: var(--backgroundVisible);
+    background-size: calc(var(--backgroundVisible) * 150dvh);
 }
 
 
 @media screen and (max-width:1079px) {
 
+    @keyframes bgPosition {
+        100% {
+            background-position-x: calc(var(--backgroundPosX) + 60%);
+        }
+    }
 
-    .containerStep1 h1{
+    h1#novo_idioma{
+        margin-bottom: 0%;
+    }
+    #almostTitle{
+        margin-top: 15%;
+        margin-bottom: -15%;
+    }
+    h1 {
         margin-top: 15%;
     }
     #idioma{
@@ -411,6 +465,7 @@ body{
     
     .botao{
         width: 100%;
+        margin-top: 5%;
     }
 
 
@@ -445,6 +500,14 @@ body{
 }
 
 @media screen and (max-width:600px) {
+    @keyframes bgPosition {
+        100% {
+            background-position-x: calc(var(--backgroundPosX) + 60%);
+        }
+    }
+
+
+
 
     .table{
         height: 55vh;
@@ -459,10 +522,13 @@ body{
 
         font-size: 20px;
     }
-
-    .containerStep1 h1{
+    h1{
+        margin-bottom: 5%;
         font-size: 32px;
         margin-top: 100px;
+    }
+    .containerStep1 h1{
+
         margin-bottom: 50px;
     }
 
@@ -545,9 +611,25 @@ body{
 
     #almostTitle{
         margin-top: 20%;
-        margin-bottom: -15px;
+        margin-bottom: -25%;
     }
 
     
 
+}
+
+@media screen and (max-width:400px) {
+    .containerStep4 .table{
+        overflow-y: scroll;
+    }
+
+    .table{
+        width: 80%;
+
+    }
+
+    div.bar{
+        margin-bottom: -20px;
+    }
+    
 }
