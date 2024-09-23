@@ -15,7 +15,7 @@ const LANGUAGES = {
 
 const LANG_HELLO_ELEMENT = document.getElementById("languageHello");
 
-const LANG_IMG_ELEMENT = document.getElementById("idioma");
+const LANG_IMG_ELEMENT = document.getElementById("idioma").children[0];
 
 const LANG_VALUE_ELEMENT = document.getElementById("languageFormValue");
 
@@ -68,7 +68,6 @@ if(Object.keys(dict).length == 0){
 
     r.style.setProperty('--displayStep2', "block");
     r.style.setProperty('--backgroundVisible', "1");
-
 
     growBarValue(5,40)
 
