@@ -32,6 +32,7 @@ header ul#info{
     margin-right: 15%;
     list-style-type: none;
     float: right;
+    margin-top: 10px;
 
 }
 
@@ -138,7 +139,8 @@ header li img#flag{
 }
 
 header li img#streak{
-    transform: translateY(-25%);
+    transform: translateY(-10%);
+    width: 30px;
 
 }
 
@@ -232,7 +234,7 @@ div.module{
     content: "";
     display: block;
     margin-left: 35px;
-    margin-right: 35px;
+    margin-right: 40px;
     border: 5px solid black;
     border-color: transparent  black transparent transparent;
     border-radius: 0px 35px;
@@ -274,4 +276,291 @@ div.module{
 .arrow.alignRight::after{
     float: left;
     margin-left: -15px;
+}
+
+.idioma{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: 25%, 25%;
+    border-radius: 100000px;
+    border: 5px solid rgb(255, 255, 255);
+
+    margin-left: 150px;
+}
+
+#ingles{ 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+    margin-bottom: -2000px;
+
+    transform: translateY(-75%);
+}
+
+.titulo{
+    margin-top: 150px;
+    margin-bottom: -120px;
+}
+
+.space_cards{
+    margin-left: 150px;
+    margin-top: 60px;
+    width: 90dvw;
+    height: auto;
+    display: inline-block;
+}
+.cards{
+    margin-right: 40px;
+    display: inline-block;
+    width: 350px;
+    height: 250px;
+    border-radius: 30px;
+    background-color: #eeecec;
+    background-repeat: no-repeat;
+
+}
+.cards td:hover{
+    background-color: #eefeff;
+}
+.cards h1{
+    font-size: medium;
+    color: black;
+    text-shadow: 0px 0px 3px white;
+    font-weight: 10000;
+    text-align: center;
+
+}
+.cards h2{
+    font-size: small;
+    text-shadow: 0px 0px 3px white;
+    font-weight: 500;
+    text-align: left;
+
+}
+.cards h3{
+    font-size: smaller;
+    text-shadow: 0px 0px 3px white;
+    text-align: left;
+    font-weight: 500;
+
+}
+
+
+.cards .text{
+    width: 60%;
+    float: right;
+}
+
+#liberdade{
+    background-image: url("../imgs/background/the_statue_of_liberty.png");
+    background-size: 350px;
+
+}
+#vocabulario{
+    background-image: url("../imgs/background/vocabulary.png");
+    background-size: 150px;
+}
+
+.butao{
+    background-color: #8993F1;
+    border: #8993F1 solid;
+    border-radius: 10px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+#tdcu{
+    margin-left: 150px;
+}
+#andamento{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    margin-bottom: -50px;
+    margin-left: 150px;
+
+}
+.space_cards2{
+    width: 300dvw;
+    height: 600dvh;
+    height: auto;
+    display: flex;
+}
+
+#pronuncia{
+    background-image: url("../imgs/background/pronunciation.png");
+    background-size: 250px;
+
+}
+#cps{
+    background-image: url("../imgs/background/cps_logo.png");
+    background-size: 250px;
+    background-position-y: 50px;
+
+}
+#gramatica{
+    background-image: url("../imgs/background/grammar.png");
+    background-size: 200px;
+    background-repeat: no-repeat;
+    transform: translateY(-3px);
+}
+#viagens{
+    background-image: url("../imgs/background/travels.png");
+    background-size: 290px;
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 100dvw;
+    margin-left: 0px;
+}
+.community{
+    display: block;
+    position: relative;
+    width: 40%;
+    height: fit-content;
+    margin: auto;
+    background-color: rgb(231, 231, 231);
+    border-radius: 50px;
+    padding: 20px 100px 20px 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.community .info{
+    display: block;
+    position: relative;
+    height: 90dvh;
+    width: 100%;
+
+    background-image: url("../imgs/background/community.png");
+    background-size: 750px;
+    background-position-y: 150px;
+    background-repeat: no-repeat;
+}
+
+.community .info p{
+    margin-top: 100%;
+    transform: translateY(-120%);
+    font-size: x-large;
+    text-align: justify;
+}
+
+.community ul{
+    width: fit-content;
+    align-items: left;
+}
+.community li{
+    display: inline;
+}
+
+.community li:first-child{
+    margin-left: -45px;
+    margin-right: 20px;
+
+}
+
+.community button{
+    border: 0px;
+    background-color: transparent;
+    font-size: 30px;
+    padding: 10px 25px 10px 25px;
+    border-radius: 50px;
+
+}
+
+.community button:hover{
+    cursor: pointer;
+}
+
+.community button.filled{
+    background-color: #00B593;
+    border: 1px solid black;
+
+}
+
+.community .explore .card{
+    display: inline-block;
+    background-color: white;
+    width: 50%;
+    height: 300px;
+    border-radius: 30px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    border: 1px solid black;
+
+}
+
+.community .explore .card h1,
+.community .explore .card h2,
+.community .explore .card h3,
+.community .explore .card p,
+.community .explore .card img {
+    display: inline-flex;
+}
+
+.community .explore .card img.avatar {
+    width: 125px;
+    height: 125px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 100px;
+    object-fit: cover;
+    object-position: 25%, 25%;
+    float: left;
+    border: 1px solid black;
+
+
+    
+}
+
+.community .explore .card h1 {
+    margin-top: -0px;
+    margin-bottom: 10px;
+    
+
+}
+
+.community .explore .card h4 {
+    width: 100%;
+    text-align: center;
+    margin-top: -1px;
+    margin-bottom: 40px;
+}
+
+
+.community .explore .card .falaAprende {
+    margin-top: 50px;
+    height: fit-content;
+    width: 100%;
+    display: inline-block;
+}
+
+.community .explore .card .falaAprende img {
+    width: 40px;
+    border-radius: 10px;
+    transform: translateY(25%);
+    border: 1px solid black;
+}
+
+
+
+.community .explore .card h2 {
+    font-size: 17px;
+    font-weight: normal;
+
+}
+
+.community .explore .card h4 {
+    color: rgb(131, 131, 131);
+    font-weight: normal;
+}
+
+.community .explore .card h2#learning {
+
+    margin-left: 15px;
+
+}
+
+.community .friends{
+    display: none;
 }
