@@ -20,6 +20,36 @@
 
 }
 
+@font-face {
+    font-family: AkiraExpanded;
+    src: url("../fonts/Akira\ Expanded.otf");
+}
+
+@font-face {
+    font-family: JetBrainsMono-Regular;
+    src: url("../fonts/JetBrainsMono-Regular.ttf");
+}
+@font-face {
+    font-family: JetBrainsMono-Thin;
+    src: url("../fonts/JetBrainsMono-Thin.ttf");
+}
+
+@font-face {
+    font-family: JetBrainsMono-Bold;
+    src: url("../fonts/JetBrainsMono-Bold.ttf");
+}
+
+h1{
+    font-family: JetBrainsMono-Regular;
+}
+
+ h2:not(.table h2), a.botao{
+    font-family: AkiraExpanded;
+}
+
+table h2 {
+    font-family: JetBrainsMono-Thin;
+}
 body{
     margin-top: -8px;
     margin-left: 0px;
