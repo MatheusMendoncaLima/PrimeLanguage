@@ -5,6 +5,27 @@
     --CarrouselFlagAmount: 0;
     --CarrouselFlagSlide: 6;
 }
+
+@font-face {
+    font-family: AkiraExpanded;
+    src: url("../fonts/Akira\ Expanded.otf");
+}
+
+@font-face {
+    font-family: JetBrainsMono-Regular;
+    src: url("../fonts/JetBrainsMono-Regular.ttf");
+}
+@font-face {
+    font-family: JetBrainsMono-Thin;
+    src: url("../fonts/JetBrainsMono-Thin.ttf");
+}
+
+@font-face {
+    font-family: JetBrainsMono-Bold;
+    src: url("../fonts/JetBrainsMono-Bold.ttf");
+}
+
+
 body{
     margin-top: -8px;
     margin-left: 0px;
@@ -16,6 +37,24 @@ body{
 div.container{
     width: 100%;
     height: 100%;
+}
+
+h1, a.button{
+    font-family: AkiraExpanded;
+}
+
+h2, p{
+    font-family: JetBrainsMono-Regular;
+    
+}
+
+footer td{
+    font-family: JetBrainsMono-Bold;
+}
+
+footer a{
+    font-family: JetBrainsMono-Thin;
+
 }
 
 /*header*/
@@ -107,6 +146,8 @@ div.whiteTextBalloon{
 
 
 }
+
+
 
 div.whiteTextBalloon h1{
     margin-top: -8%;

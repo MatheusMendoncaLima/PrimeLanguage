@@ -5,10 +5,31 @@ body{
     display: block;
     width: 100%;
     height: 100%;
-    margin: 0px
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+@font-face {
+    font-family: JetBrainsMono-Regular;
+    src: url("../fonts/JetBrainsMono-Regular.ttf");
+}
+@font-face {
+    font-family: JetBrainsMono-Thin;
+    src: url("../fonts/JetBrainsMono-Thin.ttf");
+}
 
+@font-face {
+    font-family: JetBrainsMono-Bold;
+    src: url("../fonts/JetBrainsMono-Bold.ttf");
+}
+
+header a, h1, button{
+    font-family: JetBrainsMono-Bold;
+}
+
+p{
+    font-family: JetBrainsMono-Regular;
+}
 
 header{
     position: fixed;
