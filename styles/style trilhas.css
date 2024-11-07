@@ -178,23 +178,25 @@ a:hover{
     margin-top: 10px;
     height: 55px;
 }
-nav{
-    top: 0px;
+nav {
+    top: 0;
     z-index: 1000;
     width: 100vw;
     position: fixed;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; 
     align-items: center;
     background-color: #ffffff;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     padding: 0 20px;
+    box-sizing: border-box;
 }
-.nav-list{
+.nav-list {
     list-style: none;
     display: flex;
     align-items: center;
     flex-grow: 1;
+    justify-content: left;
     margin: 0;
     padding: 0;
 }
@@ -208,7 +210,7 @@ nav{
 }
 .button-nav{
     background-color: #ffffff;
-    border: 2px #bb1717;
+    border: 2px hsl(0, 78%, 41%);
 }
 .mobile-menu {
     margin-left: 200px;
@@ -226,12 +228,15 @@ nav{
 }
 header li a{
     display: inline-flex;
-    padding: 17px;
+    padding: 13px;
     border-radius: 25px;
     width: 125px;
     line-height: 8px;
     font-weight: bolder;
     font-size: larger;
+    text-decoration: none;
+}
+header a{
     text-decoration: none;
 }
 header li a#filled{
@@ -248,12 +253,39 @@ header li a#unfilled{
     color: #000000;
 }
 #comunidadeicon{
+    margin-left: -20px;
     float: left;
     margin-top: -8px;
     height: 20px;
 }
+#cursosicon{
+    float: left;
+    margin-top: -8px;
+    height: 20px;
+}
+.right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
 
-
+#imgPerfil{
+    height: 40px;
+}
+#bandeirinha {
+    height: 25px;
+    border-radius: 5px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    border: #000000 solid 1px ;
+}
+#ofensiva{
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    
+}
 
 h1{
     margin-top: 7%;
