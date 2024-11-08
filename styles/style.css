@@ -734,7 +734,55 @@ a.noDecoration{
     
     
     }
-    
+    .testimonial-section {
+        text-align: center;
+        width: 80%;
+        max-width: 1000px;
+    }
+    .testimonial-section h1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .testimonial-section .testimonials {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .testimonial-section .card {
+        background-color: #DEF5E5;
+        border-radius: 15px;
+        padding: 20px;
+        width: 250px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        font-size: 16px;
+    }
+    .testimonial-section .card img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    .testimonial-section .name {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .testimonial-section .duration {
+        color: #555;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .testimonial-section .rating {
+        color: #FFD700;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .testimonial-section .text {
+        font-size: 14px;
+        color: #333;
+    }
     
     section#prizes{
         background-position-x: 50%;
