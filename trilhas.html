@@ -10,35 +10,18 @@
 <body>
     <div class="container">
     <header>
-        <nav>
-                <a class="logo" href="index.html"><img src="imgs/icons/prime_language.png" alt="" id="logo"></a>
-                <ul class="nav-list">
-                    <li>
-                        <a href="" id="filled"><img src="imgs/icons/learn.png" alt="" id="learnicon">Aprender</a>
-                    </li>
-                    <li>
-                        <a href="comunidade.html" id="unfilled" class="icones"><img id="comunidadeicon"
-                         src="imgs/icons/community.png" alt="">Comunidade</a>
-                    </li>
-                    <li>
-                        <a href="cursos.html" id="unfilled" class="icones"><img id="cursosicon"
-                         src="imgs/icons/courses.png" alt="">Cursos</a>
-                    </li>
+        <nav class="navbar"><!--nabar de cima -->
+                <div class="logodiv"><a class="logo" href="index.html"><img src="imgs/icons/prime_language.png" alt="" id="logo"></a></div>
+                <ul class="nav_links_desktop">
+                    <li ><a href="#" class="icondesk"><img src="imgs/icons/learn.png" alt="" id="learnicon">Aprender</a></li>
+                    <li id="iconefalha"><a href="#" class="icondesk"><img src="imgs/icons/courses.png" alt="" id="cursosicon">Cursos</a></li>
+                    <li><a href="#"class="icondesk"><img src="imgs/icons/community.png" alt="" id="comunidadeicon">comunidade</a></li>
                 </ul>
-
-                <div class="right-section">
-                    <div>
-                        <a href="">
-                            <img src="imgs/icons/streak.png" alt="" id="ofensiva">
-                        </a>
-                        <a href="" id="abandeirinha">
-                            <img src="imgs/flags/english.png" alt="" id="bandeirinha">
-                        </a>
-                        <a href="">
-                            <img src="imgs/icons/avatar_placeholder.png" alt="" id="imgPerfil">
-                        </a>
-                    </div>
-                </div>
+                <ul class="iconesdireita">
+                    <li><a href="" class="iconright"><img src="imgs/icons/streak.png" alt="" id="fogo"></a></li>
+                    <li><a href="" class="iconright"><img src="imgs/flags/english.png" alt="" id="bandeira"></a></li>
+                    <li><a href="" class="iconright"><img src="imgs/icons/avatar_placeholder.png" alt="" id="ftperfil"></a></li>
+                </ul>
         </nav>
     </header>
     <h1>INGLÊS COMPLETO</h1>
@@ -165,6 +148,13 @@
 
 
     </div>
+    <nav class="navbarBaixo"><!--navbar de baixo-->
+        <ul class="nav_links_mobile">
+            <li><a href="#"><img src="imgs/icons/learn.png" alt="" class="imagensBaixo"></a></li>
+            <li><a href="#"><img src="imgs/icons/community.png" alt="" class="imagensBaixo"></a></li>
+            <li><a href="#"><img src="imgs/icons/courses.png" alt="" class="imagensBaixo"></a></li>
+        </ul>
+    </nav>
 </div>
 </body>
 </html>
