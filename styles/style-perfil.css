@@ -1,0 +1,209 @@
+.estatisticas{
+    margin-right: 50px;
+    width: 650px;
+    height: 1160px;
+    border-radius: 45pt;
+    border: black 2px solid;
+    text-align: center;
+    margin-top: 80px;
+}
+.titulo{
+    margin-top: 50px;
+    font-size: 42px ;
+}
+.grafico{
+    margin-top: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.palavras{
+    width: 602px;
+    height: 252px;
+    border-radius: 45pt;
+    border: black 2px solid;
+    text-align: center;
+    margin-top: 110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.distancia-p{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.titulo-p{
+    font-size: 56px;
+    margin-top: 10px;
+}
+.numero{
+    font-size: 57px;
+    color: rgb(110, 190, 175);
+    margin-right: -50px;
+}
+.grafico-p{
+    margin-left: -50px;
+}
+
+
+
+.amigos{
+    width: 831px;
+    height: 408px;
+    border-radius: 45pt;
+    border: black 2px solid;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 190px;
+}
+.titulo-amigos{
+    font-size: 72px;
+}
+.texto-amigos{
+    font-size: 56px;
+}
+.conteudo-amigos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.sequencia{
+    width: 1700px;
+    height: 489px;
+    border-radius: 45pt;
+    border: black 2px solid;
+    text-align: center;
+    margin: 20px auto;
+    margin-top: 60px;
+}
+.titulo-sequencia{
+    font-size: 70px;
+    margin-bottom: 2px;
+}
+.subtitulo{
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+.conteudo-sequencia{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.semana{
+    text-align: center;
+    margin-top: -8px;
+}
+.dias-semana{
+    display: flex;
+    gap: 20px;
+}
+.dia{
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: black 2px solid;
+    font-size: 36px;
+    color: black;
+}
+.dia.ativo{
+    background-color: rgb(107, 120, 234);
+    color: white;
+}
+.dias-ativos{
+    width: 509px;
+    height: 314px;
+    border-radius: 45pt;
+    border: black 2px solid;
+    text-align: center;
+}
+.numero-dias{
+    font-size: 70px;
+    color: rgb(110, 190, 175);
+}
+.superior-dias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+.superior-dias img {
+    margin-top: 35px; 
+}
+
+
+
+.foto-perfil{
+    width: 1080px;
+    height: 627px;
+    display: flex;
+    justify-content: space-between;
+}
+.foto{
+    width: 495px;
+    height: 627px;
+}
+.pessoa-foto{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+}
+.texto-editar{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+.editar{
+    font-size: 46px;
+}
+.lapis{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.texto-perfil{
+    width: 585px;
+    height: 627px;
+    text-align: center;
+}
+.name{
+    font-size: 30px;
+    margin-top: 100px;
+}
+.lugar{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.texto-lugar{
+    font-size: 30px;
+}
+.casa{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+
+.perfil-amigo{
+    width: 1080px;
+    height: 1200px;
+}
+.perfil-estatisticas{
+    height: 1300px;
+    width: 1920px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
