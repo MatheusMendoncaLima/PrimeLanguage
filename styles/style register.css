@@ -1,5 +1,7 @@
 @charset "utf-8";
-
+*{
+    user-select: none;
+}
 :root{
     --prevBarValue: 5%;
     --barValue: 5%;
@@ -702,4 +704,12 @@ body{
         margin-bottom: -20px;
     }
     
+}
+@media screen and (max-width:600px){
+    #imagemlogo{
+        margin-top: -20px;
+    }
+}
+.navbar{
+    height: 60px;
 }

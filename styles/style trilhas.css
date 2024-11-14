@@ -1,6 +1,5 @@
 @charset "utf-8";
 /*header*/
-
 body{
     display: block;
     width: 100%;
@@ -830,6 +829,7 @@ a:hover{
     text-decoration: none;
     transition: 0.3s;
     font-size: large;
+    margin-left: 50px;
 }
 .navbarBaixo{/*navbar que vai ficar em baixo quando for para telas menores*/
     box-shadow: 0px -2px 20px rgba(0, 0, 0, 0.39);
@@ -838,7 +838,7 @@ a:hover{
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
-    height: 50px;
+    height: 40px;
     position: fixed;
     width: 100%;
     bottom: 0; 
@@ -858,11 +858,27 @@ a:hover{
     display: flex;
     justify-content: space-between;
     list-style: none;
-    margin: 0;
+    margin-right: 40px;
     padding: 0;
 }
 .nav_links_mobile li{
     margin: 30px;
+}
+.icondesk{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.imagensBaixo{
+    height: 25px;
+    
+}
+#verdinhoBaixo{
+    border-radius: 5px;
+    background-color: #5CDC8F;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
 }
 .iconesdireita{
     list-style: none;
@@ -898,14 +914,82 @@ margin-top: 7px;
     height: 25px;
 }
 #comunidadeicon{
-    margin-left: -20px;
+    
     float: left;
     margin-top: -8px;
     height: 25px;
 }
-#iconefalha{
-    margin-left: -18px;
+.nav_links_mobile{
+    margin-left: -10px;
 }
-.imagensBaixo{
-    height: 40px;
+.menu{
+    border-radius: 15px;
+    position: absolute;
+    min-height: 170px;
+    right: 50px;
+    width: 180px;
+    top: calc(100% + 10px);
+    background-color: #F8F8FF;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2);
+    user-select: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.menu.ativo{
+    opacity: 1;
+    visibility: visible;
+}
+.menu li{
+    list-style-type: none;
+    padding: 10px 10px;
+    transition: 0.5s;
+}
+.menu li:hover{
+    background-color: #d9d9da;
+}
+.menu ul{
+    margin-top: -1px;
+    margin-bottom: -2px;
+    padding: 0px 0px 0px 0px;
+}
+.menu ul li a{
+    margin: 4px;
+    text-decoration: none;
+    color: #000;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.menu ul{
+    display: flex;
+    flex-direction: column;
+}
+.menu ul li a ion-icon{
+    font-size: 1.5rem;
+}
+#baixo:hover{
+    background-color: #d9d9da;
+    border-bottom-left-radius: 15px; 
+    border-bottom-right-radius: 15px; 
+}
+#cima:hover{
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px; 
+}
+.perfil{
+    cursor: pointer;
+}
+#learnicon{
+    color: #00B593;
+}
+.icondesk{
+    border-radius: 20px;
+    background-color: #F8F8FF;
+    gap: -6px;
+    padding: 10px 10px 10px ;
+}
+#verdinho{
+    background-color: #5CDC8F;
 }
