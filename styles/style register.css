@@ -171,7 +171,6 @@ header li a.unfilled:hover{
     height: 50dvh;
 
     overflow: hidden;
-    
     /*box-shadow: rgb(202, 202, 202) 0px 0px 3px 1px;*/
 
 }
@@ -206,6 +205,11 @@ header li a.unfilled:hover{
 
 
 }
+
+.containerStep3 a{
+    float: left;
+}
+
 
 .containerStep4 .column a {
     width: 250px;
