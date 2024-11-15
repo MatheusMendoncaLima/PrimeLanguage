@@ -32,6 +32,7 @@ body{
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    background-color: #F8F8FF;
 }
 
 div.container{
@@ -57,63 +58,6 @@ footer a{
 
 }
 
-/*header*/
-
-header{
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    height: 80px;
-    box-shadow: black 0px -5px 30px 0px  ;
-    margin-bottom: 0px;
-    background-color: white;
-
-    background-image: url("../imgs/icons/prime_language.png");
-    background-repeat: no-repeat;
-    background-position-x: 15%;
-    background-size: 75px;
-    
-}
-
-header ul{
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 20px;
-    list-style-type: none;
-    float: right;
-
-}
-header li{
-    display: inline-block;
-    margin-left: 25px;
-
-}
-
-header li a{
-    display: block;
-    padding: 17px;
-    border-radius: 15px;
-    width: 125px;
-    text-align: center;
-    line-height: 0px;
-    font-weight: bolder;
-    font-size: larger;
-    text-decoration: none;
-}
-
-header li a.filled{
-    color: white;
-    background-color: #6EBEAF;
-    border: 1px solid black;
-}
-
-header li a.unfilled{
-    border: 1px solid black;
-    color: #65558F;
-
-}
-
-
 /* blue div */
 
 main div#blue{
@@ -131,7 +75,7 @@ main div#blue{
 }
 
 div.whiteTextBalloon{
-    background-color: white;
+    background-color: #F8F8FF;
     border: none;
     margin-left: 15%;
     margin-right: 15%;
@@ -164,7 +108,7 @@ main a#startnowGreen{
     background-color: #AFF4C6;
     color: #0F4E05;
     text-decoration: none;
-    font-size: 2.5dvw;
+    font-size: 2.5vw;
     line-height: 100%;
     width: 25%;
     height: 3dvw;
@@ -176,6 +120,11 @@ main a#startnowGreen{
     font-weight: bolder;
     border: 3px solid #0F4E05;
     margin-top: -15%;
+}
+@media (max-width: 1080px) {
+    main a#startnowGreen {
+        font-size: 2vw;
+    }
 }
 
 
@@ -215,11 +164,11 @@ div.language img{
 
 
 button{
-     background-color: white;
+     background-color:#F8F8FF;
      border: none;
      font-weight: 500px;
      font-size: 50px;
-     color: #707070;
+     border-radius: 30px;
 }
 
 button:hover{
@@ -264,7 +213,7 @@ main h2.subtitle{
 main a#startnowBlue{
     display: block;
     background-color: #6B78EA;
-    color: #ffffff;
+    color: #F8F8FF;
     text-decoration: none;
     font-size: 40px;
     width: 500px;
@@ -379,7 +328,6 @@ section#ia{
 
 section#prizes{
     width: 100%;
-
     background-image: url(../imgs/background/prizes.png);
     background-repeat: no-repeat;
     background-position-x: var(--margin-left);
@@ -514,30 +462,6 @@ a.noDecoration{
     div.container{
         width: 100%;
     }
-
-    header {
-        height: 50px;
-        background-size: 50px;
-    }
-    header ul{
-        margin-top: 1%;
-    }
-
-    header li{
-        margin-left: 35px;
-    }
-    header li a{
-        display: block;
-        padding: 10px;
-        border-radius: 15px;
-        width: 100%;
-        text-align: center;
-        line-height: 0px;
-        font-weight: bolder;
-        font-size: 70%;
-        text-decoration: none;
-    }
-
     main div#blue{
         width: 100dvw;
         height: fit-content;
@@ -566,7 +490,7 @@ a.noDecoration{
     main a#startnowGreen{
         width: 50%;
         height: 5%;
-        font-size: 200%;
+        font-size: 10%;
         margin-top: 7%;
         margin-bottom: 7%;
         
@@ -734,7 +658,55 @@ a.noDecoration{
     
     
     }
-    
+    .testimonial-section {
+        text-align: center;
+        width: 80%;
+        max-width: 1000px;
+    }
+    .testimonial-section h1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .testimonial-section .testimonials {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .testimonial-section .card {
+        background-color: #DEF5E5;
+        border-radius: 15px;
+        padding: 20px;
+        width: 250px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        font-size: 16px;
+    }
+    .testimonial-section .card img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    .testimonial-section .name {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .testimonial-section .duration {
+        color: #555;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .testimonial-section .rating {
+        color: #FFD700;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .testimonial-section .text {
+        font-size: 14px;
+        color: #333;
+    }
     
     section#prizes{
         background-position-x: 50%;
@@ -774,8 +746,208 @@ a.noDecoration{
     footer td.subtitle{
         font-size: 15px;
     }
-
-
-
-
+/*}
+header li{
+    display: inline-block;
+    margin-left: 25px;
+}
+a:hover{
+    position: relative;
+    opacity: 0.7;
+    z-index: 10;
+}
+#logo{
+    margin-top: 15px;
+    height: 55px;
+}
+nav{
+    z-index: 1000;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F8F8FF;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+.nav-list li {
+    padding: 10px 15px;
+    letter-spacing: 3px;
+    scroll-margin-left: 32px;
+}
+.button-nav{
+    background-color: #F8F8FF;
+    border: 2px #bb1717;
+}
+.mobile-menu {
+    display: block;
+    cursor: pointer;
+    margin-left: 10px; /* Reduced the left margin 
+    margin-right: -60px;
+    margin-top: 8px;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #000000;
+    margin: 8px;
+}
+header li a{
+    display: block;
+    padding: 17px;
+    border-radius: 15px;
+    width: 125px;
+    text-align: center;
+    line-height: 0px;
+    font-weight: bolder;
+    font-size: larger;
+    text-decoration: none;
+}
+header li a#filled{
+    color: white;
+    background-color: #6EBEAF;
+    border: 1px solid black;
+}
+header li a#unfilled{
+    border: 1px solid black;
+    color: #65558F;
+}*/
+}
+.navbar{
+    background-color: #F8F8FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 50px;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+#logo{
+    margin-left: 20px;
+    margin-top: 5px;
+    height: 55px;
+}
+a:hover{
+    position: relative;
+    opacity: 0.7;
+    z-index: 10;
+    transition: 0.3s;
+}
+.nav_links_desktop{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: auto;
+}
+.nav_links_desktop li{
+    padding: 0px 15px;
+}
+.nav_links_desktop a{
+    color: #000000;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: large;
+}
+.navbarBaixo{/*navbar que vai ficar em baixo quando for para telas menores*/
+    box-shadow: 0px -2px 20px rgba(0, 0, 0, 0.39);
+    background-color: #F8F8FF;
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    bottom: 0; 
+    z-index: 10;
+}
+.nav_links_mobile{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.iconesdireita{
+    list-style: none;
+    margin-right: 300px;
+    display: flex;
+}
+.iconesdireita li{
+    margin-left: 30px;
+}
+#registrar{
+    color: #F8F8FF;
+    background-color: #6B78EA;
+}
+.iconright{
+    display: block;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 10px;
+    font-weight: bolder;
+    font-size: larger;
+    text-decoration: none;
+    border: solid 1px black;
+    padding: 20px 1px 20px;
+    margin: 55px;
+    color: #52af71;
+    width: 100%;
+    margin-right: 50px;
+}
+@media (max-width: 768px) {
+    .iconright{
+        margin-left: -50px;
+    }
+    
+}
+#bandeira{
+    height: 25px;
+    border-radius: 5px;
+    margin-right: 25px;
+    border: #000000 solid 1px ;
+    margin-top: 7px;
+}
+#ftperfil{
+    height: 40px;
+    margin-right: 40px;
+}
+#fogo{
+height: 30px;
+border-radius: 5px;
+margin-right: 25px;
+margin-top: 7px;
+}
+#learnicon{
+    float: left;
+    margin-top: -8px;
+    height: 25px;
+}
+#cursosicon{
+    float: left;
+    margin-top: -8px;
+    height: 25px;
+}
+#comunidadeicon{
+    margin-left: -20px;
+    float: left;
+    margin-top: -8px;
+    height: 25px;
+}
+#iconefalha{
+    margin-left: -18px;
+}
+.imagensBaixo{
+    height: 40px;
 }

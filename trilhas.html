@@ -3,27 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trilhas</title>
     <link rel="stylesheet" href="styles/style trilhas.css">
+    <link rel="icon" href="imgs/background/logo_black.png" type="image/x-icon">
 </head>
 <body>
     <div class="container">
     <header>
-        <nav>
-            <ul id="pages">
-                <li id="learn"><a class="filled">Aprender</a></li>
-                <li id="community"><a href="comunidade.html" class="filled1">Comunidade</a></li>
-                <li id="courses"><a href="cursos.html" class="filled1">Cursos</a></li>
-            </ul>
-            <ul id="info">
-                <li><img src="imgs/icons/streak.png" alt="" id="streak"></li>
-                <li><img src="imgs/flags/english.png" alt="" id="flag"></li>
-                <li><img src="imgs/icons/avatar_placeholder.png" alt="" id="avatar"></li>
-            </ul>
+        <nav class="navbar"><!--nabar de cima -->
+                <div class="logodiv"><a class="logo" href="index.html"><img src="imgs/icons/prime_language.png" alt="" id="logo"></a></div>
+
+                <ul class="nav_links_desktop">
+                    <li ><a href="#" class="icondesk" id="verdinho">
+                        <img src="imgs/icons/learn.png" alt="" id="learnicon">Aprender
+                    </a>
+                    </li>
+                    <li id="iconefalha">
+                        <a href="cursos.html" class="icondesk" id="">
+                            <img src="imgs/icons/courses.png" alt="" id="cursosicon">Cursos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="comunidade.html"class="icondesk">
+                            <img src="imgs/icons/community.png" alt="" id="comunidadeicon">
+                            Comunidade</a>
+                        </li>
+                </ul>
+                <ul class="iconesdireita">
+                    <li>
+                        <a href="" class="iconright"><img src="imgs/icons/streak.png" alt="" id="fogo"></a>
+                    </li>
+                    <li>
+                        <a href="" class="iconright"><img src="imgs/flags/english.png" alt="" id="bandeira"></a>
+                    </li>
+                </ul>
+                <div class="perfil">
+                    <div class="imgBox">
+                    <img src="imgs/icons/avatar_placeholder.png" alt="" id="ftperfil">
+                    </div>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li id="cima">
+                            <a href="">
+                                <ion-icon name="person-outline"></ion-icon>
+                                Meu perfil
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <ion-icon name="settings-outline"></ion-icon>
+                                Configurações
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <ion-icon name="help-circle-outline"></ion-icon>
+                                Ajuda
+                            </a>
+                        </li>
+                        <li id="baixo">
+                            <a href="">
+                                <ion-icon name="log-out-outline"></ion-icon>
+                                Sair
+                            </a>
+                        </li>
+                    </ul>
+                </div>
         </nav>
     </header>
-
-
     <h1>INGLÊS COMPLETO</h1>
 
     <div class="module">
@@ -136,6 +184,19 @@
 
 
     </div>
+    <nav class="navbarBaixo"><!--navbar de baixo-->
+        <ul class="nav_links_mobile">
+            <li id="verdinhoBaixo"><a href="#">
+                <img src="imgs/icons/learn.png" alt="" class="imagensBaixo">
+            </a>
+        </li>
+            <li><a href="comunidade.html"><img src="imgs/icons/community.png" alt="" class="imagensBaixo"></a></li>
+            <li><a href="cursos.html"><img src="imgs/icons/courses.png" alt="" class="imagensBaixo"></a></li>
+        </ul>
+    </nav>
 </div>
+<script src="scripts/dropdown.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
