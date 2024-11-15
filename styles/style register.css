@@ -167,10 +167,11 @@ header li a.unfilled:hover{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-bottom: -500px;
 
-    width: 750px;
-    height: 60dvh;
+    width: 700px;
+    height: 50dvh;
 
     overflow: hidden;
+    
     /*box-shadow: rgb(202, 202, 202) 0px 0px 3px 1px;*/
 
 }
@@ -188,7 +189,7 @@ header li a.unfilled:hover{
 
 
     display: inline-block;
-    width: 250px;
+    width: 180px;
     height: 180px;
     border-radius: 30px;
     text-align: center;
@@ -198,7 +199,6 @@ header li a.unfilled:hover{
     margin-right: 3%;
     margin-left: 3%;
     margin-bottom: 30px;
-    font-size: 20px;
     font-family: JetBrainsMono-Regular;
     background-color: white;
 
@@ -207,16 +207,21 @@ header li a.unfilled:hover{
 
 }
 
+.containerStep4 .column a {
+    width: 250px;
+    font-size: 17px;
 
+    
+}
 .containerStep4 .column a h2 {
-    margin-top: 25%;
+    margin-top: 30%;
     
 }
 
 .containerStep4 .center{
     margin-left: auto;
     margin-right: auto;
-    width: 78%;
+    width: 86%;
 }
 
 .column a:hover{
