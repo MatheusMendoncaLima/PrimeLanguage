@@ -23,6 +23,11 @@ body{
     src: url("../fonts/JetBrainsMono-Bold.ttf");
 }
 
+@font-face {
+    font-family: AkiraExpanded;
+    src: url("../fonts/Akira\ Expanded.otf");
+}
+
 /*header a, h1, button{
     font-family: JetBrainsMono-Bold;
 }*/
@@ -293,88 +298,7 @@ h1{
     margin-right: auto;
     width: fit-content;
 }*/
-.container0 {
-    display: flex;
-    align-items: center; 
-}
 
-.bloco-externo {
-    background-color: #6a5acd; 
-    border-radius: 15px;
-    padding: 15px 80px; 
-    margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
-}
-
-.texto {
-    color: #000;
-    font-family: JetBrainsMono-Bold;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: right;
-    margin-right: 50px; 
-}
-
-.burger {
-    position: absolute;
-    width: 40px;
-    height: 30px;
-    background: transparent;
-    cursor: pointer;
-    
-}
-
-.burger input {
-    display: none;
-}
-
-.burger span {
-    display: flex;
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    background: black;
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
-}
-
-.burger span:nth-of-type(1) {
-    top: 0px;
-    transform-origin: left center;
-}
-
-.burger span:nth-of-type(2) {
-    top: 50%;
-    transform: translateY(-50%);
-    transform-origin: left center;
-}
-
-.burger span:nth-of-type(3) {
-    top: 100%;
-    transform-origin: left center;
-    transform: translateY(-100%);
-}
-
-.burger input:checked ~ span:nth-of-type(1) {
-    transform: rotate(45deg);
-    top: 0px;
-    left: 5px;
-}
-
-.burger input:checked ~ span:nth-of-type(2) {
-    width: 0%;
-    opacity: 0;
-}
-
-.burger input:checked ~ span:nth-of-type(3) {
-    transform: rotate(-45deg);
-    top: 28px;
-    left: 5px;
-}
 
 div.module{
     display: block;
@@ -388,6 +312,7 @@ div.module{
     margin-right: auto;
     margin-bottom: 50px;
     margin-top: 100px;
+    
 }
 
 .module h2{
@@ -398,12 +323,14 @@ div.module{
     background-color: white;
     box-shadow: rgb(211, 211, 211) 0px 3px 2px 1px;
     margin-bottom: 50px;
+    font-family: JetBrainsMono-Bold;
 }
 
 .lesson{
     display: inline-block;
     height: 100px;
     width: 100%;
+    font-family: JetBrainsMono-Regular;
 }
 
 .lesson img{
@@ -549,10 +476,11 @@ div.module{
 }
 .cards h1{
     font-size: medium;
-    color: black;
+    color: rgb(0, 0, 0);
     text-shadow: 0px 0px 3px white;
     font-weight: 10000;
     text-align: center;
+    font-family: AkiraExpanded;
 
 }
 .cards h2{
@@ -594,10 +522,13 @@ div.module{
     cursor: pointer;
 }
 #tdcu{
+    font-family: JetBrainsMono-Bold;
     margin-left: 150px;
+    font-size: large;
+    margin-bottom: -50px ;
 }
 #andamento{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: JetBrainsMono-Bold;
     font-size: larger;
     margin-bottom: -50px;
     margin-left: 150px;
@@ -649,6 +580,9 @@ div.module{
     margin-top: 100px;
     margin-bottom: 100px;
 
+}
+#comunidadeh1 {
+    font-family: AkiraExpanded;
 }
 
 .community .info{
@@ -702,6 +636,12 @@ div.module{
     border: 1px solid black;
 
 }
+#discover {
+    font-family: JetBrainsMono-Bold;
+}
+#friends {
+    font-family: JetBrainsMono-Bold;
+}
 
 .community .explore .card{
     display: inline-block;
@@ -722,7 +662,9 @@ div.module{
 .community .explore .card img {
     display: inline-flex;
 }
-
+.community .explore .card #nomepessoa {
+    font-family: AkiraExpanded;
+}
 .community .explore .card img.avatar {
     width: 125px;
     height: 125px;
@@ -733,7 +675,6 @@ div.module{
     object-position: 25%, 25%;
     float: left;
     border: 1px solid black;
-
 
     
 }
@@ -868,6 +809,7 @@ a:hover{
     display: flex;
     align-items: center;
     gap: 10px;
+    font-family: JetBrainsMono-Bold;
 }
 .imagensBaixo{
     height: 25px;
@@ -935,6 +877,7 @@ margin-top: 7px;
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
+    font-family: JetBrainsMono-Regular;
 }
 .menu.ativo{
     opacity: 1;
