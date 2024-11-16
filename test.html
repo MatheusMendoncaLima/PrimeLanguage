@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exame</title>
+    <link rel="stylesheet" href="styles/style register.css">
+    <link rel="icon" href="imgs/background/logo_black.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar"><!--sei la man 2-->
+            <a class="logo" href="index.html"><img src="imgs/icons/prime_language.png" alt="" id="imagemlogo"></a>
+            <ul class="nav-list">
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="pre-test-container">
+        <h1>A prova é composta por seis blocos com cinco questões cada bloco. Quanto mais você progredir, mais díficil ficará. Boa sorte!</h1>
+
+        <a class="botao" id="startTest" onclick="startTest()">INICIAR</a>
+    </div>
+
+    <div id="test-container">
+        <h2 id="question"></h2>
+        <h3 class="answer"></h3>
+        <h3 class="answer"></h3>
+        <h3 class="answer"></h3>
+        <h3 class="answer"></h3>
+        <h3 class="answer"></h3>
+        <audio id="audio-container" controls src="audios/audio1.mp3"></audio>
+        <!--
+        <div class="audio-container">
+            <img id="play-button"></img>
+            <input type="range" id="time-slider">
+            <span id="current-time" class="time">0:00</span>
+            <span id="duration" class="time">/ 0:00</span>
+        </div> -->
+    </div>
+
+    <div id="results-container">
+        <h1 id="almostTitle">O resultado do eu teste foi:</h1>
+        <h1 id="result"></h1>
+        <h1>Vamos Começar?</h1>
+
+        <a class="botao" id="start" href="trilhas.html">SIM</a>
+    </div>
+
+
+    <div class="bar">
+        <div class="barValue"></div>
+    </div>
+    <script src="scripts/exam.js"></script>
+</body>
+</html>
