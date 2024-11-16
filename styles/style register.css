@@ -415,9 +415,10 @@ h1#novo_idioma{
     background-color: #AFF4C6;
     padding: 15px;
     font-size: 30px;
-    border: none;
+    border: 2px solid #0F4E05;
     border-radius: 15px;
     color: #0F4E05;
+    
     cursor: pointer;
 
     width: 40%;
@@ -434,7 +435,7 @@ h1#novo_idioma{
 
 }
 
-.botao#start{
+.botao#start, .botao#startTest{
     margin-top: 25dvh;
     border-radius: 150px;
     text-align: center;
@@ -517,6 +518,171 @@ div.containerStep5{
 body{
     background-size: calc(var(--backgroundVisible) * 150dvh);
 }
+
+
+
+
+
+
+
+/* Test */
+
+#test-container{
+    margin-top: 8px;
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+}
+#results-container, #test-container, #pre-test-container{
+    display: none;
+}
+
+
+h2#question{
+    margin-top: 10%;
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: normal;
+    float: none;
+    margin-bottom: 100px;
+    font-family: JetBrainsMono-Regular;
+    text-align: center;
+    font-size: 30px;
+}
+
+#pre-test-container h1{
+    font-size: 35px;
+    width: 40%;
+
+}
+
+
+
+h3.answer{
+    float: none;
+    display: block;
+    margin-top: 0px;
+    font-family: JetBrainsMono-Regular;
+    width: fit-content;
+    cursor: pointer;
+    width:30%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+
+}
+#results-container a#start{
+    margin-top: 150px;
+}
+#results-container h1#result{
+    margin-top: 130px;
+    margin-bottom: -50px;
+    font-size: 60px;
+}
+
+#audio-container{
+    border: 2px solid black;
+    border-radius: 300px;
+
+
+    float:right;
+    margin-top: -150px;
+    margin-right: 35%;
+    display: none;
+}
+
+audio::-webkit-media-controls-time-remaining-display, audio::-webkit-media-controls-current-time-display{
+    font-family: JetBrainsMono-Regular;
+}
+
+
+/* nao usado ainda
+
+
+
+
+.audio-container{
+    border: 1px solid black;
+    border-radius: 50px;
+    width: fit-content;
+    padding-top: 15px;
+    padding-bottom: 20px ;
+    padding-left: 20px;
+    padding-right: 15px ;
+}
+
+.audio-container #play-button{
+    content: url(../imgs/icons/audio-player-play-button.svg);
+    float: left;
+    margin-top: 5px;
+    width: 25px;
+    transition: 5s;
+
+    
+}
+
+.audio-container #play-button:hover{
+    content: url(../imgs/icons/audio-player-pause-button.svg);
+
+}
+
+.audio-container #play-button:hover {
+    cursor: pointer;
+}
+
+.audio-container #time-slider{
+    position: relative;
+    margin-top: 15px;
+    margin-left: 10px;
+    background-color: #c9c9c9;
+    border-radius: 500px;
+
+}
+
+.audio-container #time-slider::-ms-fill-lower{
+    background-color: #6EBEAF;
+
+
+
+}
+
+.audio-container #time-slider::-moz-range-progress{
+    background-color: #6EBEAF;
+
+}
+.audio-container .time{
+    font-family: JetBrainsMono-Regular;
+}
+
+input[type='range'] {
+    overflow: hidden;
+    width: 80px;
+    -webkit-appearance: none;
+  }
+  
+  input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: #00ffdd;
+    margin-top: -1px;
+  }
+  
+  input[type='range']::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 10px;
+    cursor: ew-resize;
+    box-shadow: -80px 0 0 80px #6EBEAF;
+  }
+
+*/
+
+
+
+
 
 
 @media screen and (max-width:1079px) {
