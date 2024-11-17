@@ -59,6 +59,8 @@ const answers = {
     ]
 };
 
+
+const effectBoxes = [document.getElementById("effect-a"),document.getElementById("effect-b"),document.getElementById("effect-c"), document.getElementById("effect-d"), document.getElementById("effect-e")]
 const proficiencyLevels = {"english" : ["a1","a2","b1","b2","c1","c2"]}
 
 const root = document.querySelector(":root");
@@ -74,7 +76,6 @@ let totalQuestions = 0;
 
 let rightAnswered = 0;
 let wrongAnswered = 0;
-
 
 var url = window.location.href;
 
@@ -92,9 +93,11 @@ params.forEach(param => {
     dict[param.split("=")[0]] =  param.split("=")[1]; 
     }
 });
+growBarValue(80, 80);
 
 const language = dict["language"];
 const level = dict["level"];
+
 if (level != null){
     gotoCourseButton.href += "?language="+language+"&level="+level
     resultsContainer.style.display = "block"
@@ -103,7 +106,7 @@ if (level != null){
 
 }else {
     preTestContainer.style.display = "block"
-    growBarValue(80, 80);
+    
 }
 
 function startTest(){
@@ -125,24 +128,38 @@ function startTest(){
 }
 updateQuestion()
 }
-function answer(answer){
+let clicked = false;
+async function answer(answer, letterIndex){
+    if(!clicked){
+        clicked=true
+    let givenClass;
     if (answer == getCurrentRightAnswer()){
-        alert("acertou aaa amizeravi")
+        givenClass="effectRight";
+        answerButtons[letterIndex].style.color= "green"
         rightAnswered++;
 
     }else{
-        alert("errou")
+        answerButtons[letterIndex].style.color= "red"
+        givenClass="effectWrong";
         wrongAnswered++;
     }
+    effectBoxes[letterIndex].classList.add(givenClass)
+    
+    effectBoxes[letterIndex].checked=true;
+    await new Promise(r => setTimeout(r, 1000));
     currentQuestion++;
     answeredQuestions++;
-    updateQuestion();
+    effectBoxes[letterIndex].checked=false;
+    effectBoxes[letterIndex].classList.remove(givenClass)
+   updateQuestion();
+   answerButtons[letterIndex].style.color= "black"
+   clicked=false
+}
 }
 
 function updateQuestion(){
     if(answeredQuestions >= totalQuestions){
         proficiency =  proficiencyLevels[language][Math.floor(rightAnswered/5)];
-        alert(rightAnswered/5)
         window.location.replace("test.html?language="+language + "&level="+proficiency)
     }else if(currentQuestion >= answers[language][difficultLevel].length){
         difficultLevel++;
@@ -151,7 +168,7 @@ function updateQuestion(){
 
     for (let i = 0; i < answerButtons.length; i++) {
         answerButtons[i].innerHTML = alphabet[i]+") "+ getCurrentAnswers()[i];
-        answerButtons[i].onclick = function() { answer(getCurrentAnswers()[i])}
+        answerButtons[i].onclick = function() { answer(getCurrentAnswers()[i], i)}
     }
     if(answers[language][difficultLevel][currentQuestion].length==3){
         audioOutput.src = answers[language][difficultLevel][currentQuestion][2]
@@ -171,7 +188,6 @@ function shuffleArray(array) {
     for (let i = array.length - 1; i >= 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
-    
 }
 }
 

@@ -600,6 +600,70 @@ audio::-webkit-media-controls-time-remaining-display, audio::-webkit-media-contr
 }
 
 
+.effect{
+  width: 60px;
+  height: 60px; 
+    transform: translateY(-40%);
+    margin-left: 34%;
+    appearance: none;
+  position:absolute;
+  pointer-events: none;
+  
+}
+
+
+
+.effectRight:checked:before{
+    content: "";
+    margin: 10px;
+    display: block;
+    width: 30px;
+    height: 15px;
+    border-color: transparent transparent green green  ;
+    border-width: 5px;
+    border-style: solid;
+    transform: rotate(-45deg);
+    animation: pulse 1s ease-in-out;
+    position: absolute;
+  }
+
+
+  .effectWrong:checked:before{
+    content: "X";
+    color: red;
+    margin-left: 10px;
+    display: block;
+    width: 30px;
+    height: 15px;
+    font-size: 55px;
+    animation: pulse2 1s ease-in-out;
+    position: absolute;
+  }
+  @keyframes pulse {
+    0%{
+        transform: rotate(-45deg);
+    }
+    100% {
+      transform: scale(1) rotate(-45deg);
+    }
+    50% {
+      transform: scale(1.6) rotate(-65deg);
+    }
+  }
+
+  @keyframes pulse2 {
+    0%{
+        transform: rotate(-15deg);
+    }
+    100% {
+      transform: scale(1) rotate(-0deg);
+    }
+    50% {
+      transform: scale(1.6) rotate(15deg);
+    }
+  }
+  
+
 /* nao usado ainda
 
 
