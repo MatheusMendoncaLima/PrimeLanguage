@@ -311,7 +311,6 @@ div#buttonForChangeModule{
     margin-top: 250px;
     margin-left: auto;
     margin-right: auto;
-
     font-family: JetBrainsMono-Regular;
     font-size: 18px;
     margin-bottom: -20px;
@@ -321,7 +320,7 @@ div#buttonForChangeModule h1{
     margin-top: 5px;
 }
 .hamburguer{
-    margin-top: 0px;
+    margin-top: 5px;
     margin-left: 20px;
     margin-right: 20px;
     float: left;
@@ -333,7 +332,7 @@ div#buttonForChangeModule h1{
     display: block;
     position: relative;
     width: 100%;
-    height: 10px;
+    height: 7px;
     margin:7px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -980,4 +979,50 @@ margin-top: 7px;
 
 #A1, #A2, #B1, #B2, #C1, #C2 {
     display: none;
+}
+div.drop-nivel{
+    margin-left: -130px;
+    position: absolute;
+    background-color: #F8F8FF;
+    z-index: 100;
+    font-size: small;
+    border-radius: 40px;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+div.drop-nivel.ativo{
+    opacity: 1;
+    visibility: visible;
+}
+.lista-niveis{
+    list-style-type: none;
+}
+.lista-niveis li{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+.lista-niveis li a{
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    margin-top: 30px;
+}
+.lista-niveis li a img{
+    padding: 20px 20px 20px;
+    margin-top: -25px;
+    height: 60px;
+    display: inline-block;
+}
+.titulo-idioma{
+    display: flex;
+    padding-top: 20px;
+}
+.titulo-idioma img{
+    margin-left: 30px;
+    height: 80px;
+    margin-top: -10px;
 }
