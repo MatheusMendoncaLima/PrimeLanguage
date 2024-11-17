@@ -936,3 +936,7 @@ margin-top: 7px;
 #verdinho{
     background-color: #5CDC8F;
 }
+
+#A1, #A2, #B1, #B2, #C1, #C2 {
+    display: none;
+}
