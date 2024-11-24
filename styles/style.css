@@ -29,15 +29,16 @@
 body{
     margin-top: -8px;
     margin-left: 0px;
-    width: 100%;
+    width: 105dvw;
     height: 100%;
     overflow-x: hidden;
     background-color: #F8F8FF;
 }
 
 div.container{
-    width: 100%;
+    width: 106dvw;
     height: 100%;
+    overflow-x: hidden;
 }
 
 h1, a.button{
@@ -74,9 +75,7 @@ main div#blue{
 
 }
 
-#xerequinha {
-    font-family: JetBrainsMono-Bold;
-}
+
 
 div.whiteTextBalloon{
     background-color: #F8F8FF;
@@ -387,7 +386,7 @@ footer td{
     width: 325px;
     text-align: center;
     font-weight: bolder;
-    padding-left: 75px;
+    padding-left: 25%;
     
 }
 
@@ -466,15 +465,9 @@ a.noDecoration{
 
 @media screen and (max-width:1079px) {
     
-    body{
-        width: 100%;
-    }
 
-    div.container{
-        width: 100%;
-    }
     main div#blue{
-        width: 100dvw;
+
         height: fit-content;
         background-size: 300%;
         background-position-y: 50px;
@@ -510,7 +503,7 @@ a.noDecoration{
         
     }
 
-    main h1.title{
+    h1.title{
         text-align: center;
         margin-left: 15%;
         margin-right: 15%;
@@ -595,12 +588,12 @@ a.noDecoration{
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
-    font-family: JetBrainsMono-Regular;
+    
 }
 .testimonial-section .testimonials {
     display: grid;
     grid-auto-flow: column;
-    gap: 20px;
+    gap: 50px;
     justify-content: center;
     flex-wrap: wrap;
     font-family: JetBrainsMono-Regular;
@@ -615,7 +608,7 @@ a.noDecoration{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 16px;
     border: 2px solid black;
-    
+    float: left;    
 }
 .testimonial-section .card img {
     width: 70px;
@@ -745,7 +738,7 @@ a.noDecoration{
     }
 
     footer{
-        width: 100dvw;
+        width: 100%;
         height: fit-content;
         background-position-x: 90%, 85%, 90%, 93%, 93%, 100%;
 
@@ -839,6 +832,45 @@ header li a#unfilled{
     border: 1px solid black;
     color: #65558F;
 }*/
+
+.testimonial-section{
+    margin-bottom: 150px;
+}
+
+.testimonial-section .testimonials {
+    display: grid;
+    grid-auto-flow: row;
+    
+}
+
+.testimonial-section .card {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+button#btnRight{
+    float: right;
+
+    margin-top: -70px;
+    margin-right:  10px;
+
+}
+
+button#btnLeft{
+    float: left;
+    margin-left:  5px;
+
+}
+
+.testimonial-section {
+    margin-top: -300px;
+}
+
+h1.title{
+    margin-bottom: 75px;
+}
+
 }
 .navbar{
     background-color: #F8F8FF;
@@ -934,6 +966,10 @@ a:hover{
 @media (max-width: 768px) {
     .iconright{
         margin-left: -50px;
+    }
+
+    .iconesdireita{
+        margin-right: 6%;
     }
     
 }

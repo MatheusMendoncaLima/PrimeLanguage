@@ -361,7 +361,8 @@ h1#novo_idioma{
     font-size: 250%;
 
     margin-left: 50px;
-    margin-bottom: -50%;
+    margin-top: 0px;
+    margin-bottom: 0px;
 
 }
 
@@ -828,11 +829,19 @@ input[type='range'] {
     }
 
 
+
     .table{
-        height: 62dvh;
+        height: 63dvh;
         width: 70%;
         margin-left: auto;
 
+    }
+    @media screen and (max-height: 700px) {
+        .table{
+            height: 50dvh;
+
+    
+        }
     }
 
     .containerStep1 a h2{
@@ -903,10 +912,11 @@ input[type='range'] {
 
 
 
-
+    
  
     .containerStep2 .login{
         width: 90dvw;
+        
     }
     
     .containerStep2 .texto{
@@ -940,7 +950,6 @@ input[type='range'] {
     }
     #idioma{
         margin-top: 10dvh;
-    
     
     }
 

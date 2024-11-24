@@ -21,12 +21,12 @@ const allKeepLevel = document.getElementsByClassName("keepLevel");
 const levelNameBox =  document.getElementById("currentLevelName")
 const listaNiveis = document.getElementsByClassName("lista-niveis")[0];
 const levelNames = {"english": {
-    "a1": ["Iniciante A1", "imgs/icons/avatar_placeholder.png"],
-    "a2": ["Básico A2", "imgs/icons/avatar_placeholder.png"],
-    "b1": ["Intermediário B1", "imgs/icons/avatar_placeholder.png"],
-    "b2": ["Intermediário/Avançado B2‎ ‎ ‎ ‎ ‎ ‎ ‎ ", "imgs/icons/avatar_placeholder.png"],
-    "c1": ["Avançado C1", "imgs/icons/avatar_placeholder.png"],
-    "c2": ["Fluente C2", "imgs/icons/avatar_placeholder.png"],
+    "a1": ["Iniciante A1", "imgs/icons/beginner.png"],
+    "a2": ["Básico A2", "imgs/icons/beginner.png"],
+    "b1": ["Intermediário B1", "imgs/icons/intermediate.png"],
+    "b2": ["Intermediário/Avançado B2‎ ‎ ‎ ‎ ‎ ‎ ‎ ", "imgs/icons/intermediate.png"],
+    "c1": ["Avançado C1", "imgs/icons/advanced.png"],
+    "c2": ["Fluente C2", "imgs/icons/advanced.png"],
 }}
 
 const flagSources = {"english" : "imgs/flags/english.png"}
