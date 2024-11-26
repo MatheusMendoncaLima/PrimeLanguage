@@ -29,15 +29,16 @@
 body{
     margin-top: -8px;
     margin-left: 0px;
-    width: 100%;
+    width: 105dvw;
     height: 100%;
     overflow-x: hidden;
     background-color: #F8F8FF;
 }
 
 div.container{
-    width: 100%;
+    width: 106dvw;
     height: 100%;
+    overflow-x: hidden;
 }
 
 h1, a.button{
@@ -74,6 +75,8 @@ main div#blue{
 
 }
 
+
+
 div.whiteTextBalloon{
     background-color: #F8F8FF;
     border: none;
@@ -108,24 +111,31 @@ main a#startnowGreen{
     background-color: #AFF4C6;
     color: #0F4E05;
     text-decoration: none;
-    font-size: 2.5vw;
+    font-size: 40px;
     line-height: 100%;
     width: 25%;
-    height: 3dvw;
+    height: 3vw;
     margin-right: 15%;
     float: right;
     text-align: center;
-    padding: 15px;
-    border-radius: 3vw;
-    font-weight: bolder;
-    border: 3px solid #0F4E05;
+    padding: 10px;
+    display: flex;
+    border-radius: 40px;
+    border: 3px solid #254121;
     margin-top: -15%;
+    font-family: AkiraExpanded;
+    align-items: center;
+    justify-content: center;
 }
 @media (max-width: 1080px) {
     main a#startnowGreen {
         font-size: 2vw;
     }
 }
+
+
+
+
 
 
 /*carrousel*/
@@ -376,7 +386,7 @@ footer td{
     width: 325px;
     text-align: center;
     font-weight: bolder;
-    padding-left: 75px;
+    padding-left: 25%;
     
 }
 
@@ -455,15 +465,9 @@ a.noDecoration{
 
 @media screen and (max-width:1079px) {
     
-    body{
-        width: 100%;
-    }
 
-    div.container{
-        width: 100%;
-    }
     main div#blue{
-        width: 100dvw;
+
         height: fit-content;
         background-size: 300%;
         background-position-y: 50px;
@@ -499,7 +503,7 @@ a.noDecoration{
         
     }
 
-    main h1.title{
+    h1.title{
         text-align: center;
         margin-left: 15%;
         margin-right: 15%;
@@ -571,6 +575,67 @@ a.noDecoration{
 
 
 }
+.testimonial-section {
+    width: 100%;
+    max-width: 1000px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+.testimonial-section h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+}
+.testimonial-section .testimonials {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: JetBrainsMono-Regular;
+    width: 100%;
+}
+.testimonial-section .card {
+    background-color: #a9ecbf;
+    border-radius: 50px;
+    padding: 30px;
+    height: 350px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    border: 2px solid black;
+    float: left;    
+}
+.testimonial-section .card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.testimonial-section .name {
+    font-weight: bold;
+    font-size: 18px;
+    font-family: AkiraExpanded;
+}
+.testimonial-section .duration {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.testimonial-section .rating {
+    color: #070600;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.testimonial-section .text {
+    font-size: 16px;
+    color: #333;
+}
+
 
 @media screen and (max-width:600px) {
 
@@ -658,55 +723,6 @@ a.noDecoration{
     
     
     }
-    .testimonial-section {
-        text-align: center;
-        width: 80%;
-        max-width: 1000px;
-    }
-    .testimonial-section h1 {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }
-    .testimonial-section .testimonials {
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .testimonial-section .card {
-        background-color: #DEF5E5;
-        border-radius: 15px;
-        padding: 20px;
-        width: 250px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        text-align: left;
-        font-size: 16px;
-    }
-    .testimonial-section .card img {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        margin-bottom: 10px;
-    }
-    .testimonial-section .name {
-        font-weight: bold;
-        font-size: 18px;
-    }
-    .testimonial-section .duration {
-        color: #555;
-        font-size: 14px;
-        margin-bottom: 5px;
-    }
-    .testimonial-section .rating {
-        color: #FFD700;
-        font-size: 14px;
-        margin-bottom: 10px;
-    }
-    .testimonial-section .text {
-        font-size: 14px;
-        color: #333;
-    }
     
     section#prizes{
         background-position-x: 50%;
@@ -722,7 +738,7 @@ a.noDecoration{
     }
 
     footer{
-        width: 100dvw;
+        width: 100%;
         height: fit-content;
         background-position-x: 90%, 85%, 90%, 93%, 93%, 100%;
 
@@ -816,6 +832,45 @@ header li a#unfilled{
     border: 1px solid black;
     color: #65558F;
 }*/
+
+.testimonial-section{
+    margin-bottom: 150px;
+}
+
+.testimonial-section .testimonials {
+    display: grid;
+    grid-auto-flow: row;
+    
+}
+
+.testimonial-section .card {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+button#btnRight{
+    float: right;
+
+    margin-top: -70px;
+    margin-right:  10px;
+
+}
+
+button#btnLeft{
+    float: left;
+    margin-left:  5px;
+
+}
+
+.testimonial-section {
+    margin-top: -300px;
+}
+
+h1.title{
+    margin-bottom: 75px;
+}
+
 }
 .navbar{
     background-color: #F8F8FF;
@@ -890,6 +945,7 @@ a:hover{
 #registrar{
     color: #F8F8FF;
     background-color: #6B78EA;
+    font-family: AkiraExpanded;
 }
 .iconright{
     display: block;
@@ -905,10 +961,15 @@ a:hover{
     color: #52af71;
     width: 100%;
     margin-right: 50px;
+    font-family: AkiraExpanded;
 }
 @media (max-width: 768px) {
     .iconright{
         margin-left: -50px;
+    }
+
+    .iconesdireita{
+        margin-right: 6%;
     }
     
 }

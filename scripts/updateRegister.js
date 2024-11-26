@@ -27,8 +27,7 @@ const STEP4_TABLE_ELEMENTS = document.getElementsByClassName("a4");
 
 
 const STEP4_TITLE = document.getElementById("step4msg");
-
-
+const STEP5_START_BUTTON = document.getElementById("start")
 
 var url = window.location.href;
 
@@ -94,7 +93,7 @@ if(Object.keys(dict).length == 0){
 
     }
 
-    growBarValue(40,80);
+    growBarValue(40,60);
 
 }else if (LANGUAGES[language] != null && user != null && motivation != null && level == null){
     r.style.setProperty('--displayStep4', "block");
@@ -102,7 +101,7 @@ if(Object.keys(dict).length == 0){
 
     moveBg(50,0, -26, 0)
 
-    growBarValue(80, 95)
+    growBarValue(60, 80)
 
     for (var i =0; i< STEP4_TABLE_ELEMENTS.length; i++) {
         var key = STEP4_TABLE_ELEMENTS[i];
@@ -110,16 +109,19 @@ if(Object.keys(dict).length == 0){
 
 
     }
-
+    
     STEP4_TITLE.innerHTML = "Qual seu nivel de " + LANGUAGES[language][1] + "?"
 
 } else if(LANGUAGES[language] != null && user != null && motivation != null && level != null){
-    r.style.setProperty('--displayStep5', "block");
-    r.style.setProperty('--backgroundVisible', "1");
+    if(level=="advanced"){
+        window.location.replace("test.html?language="+language);
+    }else{
+        r.style.setProperty('--displayStep5', "block");
+        growBarValue(80,100)
+        STEP5_START_BUTTON.href+="?language="+language+"&level=a1"
 
-    moveBg(-26, 0, -26, 0)
+    }
 
-    growBarValue(95,100)
 
 } else {
     //window.location.href = "register.html";
