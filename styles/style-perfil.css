@@ -208,6 +208,7 @@
     margin: auto;
 }
 .navbar{
+    margin-left: -10px;
     background-color: #F8F8FF;
     display: flex;
     justify-content: space-between;
