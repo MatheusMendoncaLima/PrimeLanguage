@@ -15,7 +15,9 @@ params.forEach(param => {
     }
 });
 
-
+const flag = document.getElementById("bandeira");
+const dropDownFlag = document.getElementById("dropDownFlag");
+const courseName = document.getElementById("courseName");
 const allKeepLanguage = document.getElementsByClassName("keepLanguage");
 const allKeepLevel = document.getElementsByClassName("keepLevel");
 const levelNameBox =  document.getElementById("currentLevelName")
@@ -29,8 +31,18 @@ const levelNames = {"english": {
     "c2": ["Fluente C2", "imgs/icons/advanced.png"],
 }}
 
-const flagSources = {"english" : "imgs/flags/english.png"}
-
+const LANGUAGES = {
+    "english" : ["HELLO!", "Inglês"],
+    "spanish" : ["¡HOLA!", "Espanhol"],
+    "japanese" : ["こんにちは!", "Japonês"],
+    "german" : ["HALLO!", "Alemão"],
+    "french" : ["BONJOUR!", "Francês"],
+    "chinese" : ["你好!", "Chinês"],
+    "korean" : ["안녕하세요!", "Coreano"],
+    "italian" : ["CIAO!", "Italiano"],
+    "russian" : ["ПРИВЕТ!", "Russo"],
+    "portuguese" : ["Olá!", "Português"]
+}
 const language = dict["language"];
 const level = dict["level"].toLowerCase();
 
@@ -47,9 +59,15 @@ for(i=0; i< allKeepLevel.length; i++){
 }
 
 
+if(flag != null){
+    flag.src= "imgs/flags/"+language+".png"
+    
+}
 
 const module = document.getElementById(level.toUpperCase());
 if(module!= null){
+    dropDownFlag.src = "imgs/flags/"+language+".png";
+    courseName.innerHTML = LANGUAGES[language][1] + " completo"
     levelNameBox.innerHTML = levelNames[language][level][0]
     module.style.display = "block";
     for(i=0; i< Object.keys(levelNames[language]).length; i++){

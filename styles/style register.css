@@ -814,7 +814,7 @@ input[type='range'] {
     }
 
     .containerStep2 .texto{
-        font-size: 150%
+        height: 5px;
     }
 
     .containerStep2 .nome{
@@ -834,11 +834,11 @@ input[type='range'] {
         height: 63dvh;
         width: 70%;
         margin-left: auto;
-
+        
     }
     @media screen and (max-height: 700px) {
         .table{
-            height: 50dvh;
+            height: 61dvh;
 
     
         }
@@ -851,6 +851,10 @@ input[type='range'] {
         font-size: 20px;
     }
     
+    a h2{
+      font-size: 17px;  
+    margin-top: 25%;
+    }
     
 
     .table a{
@@ -869,12 +873,12 @@ input[type='range'] {
     .containerStep3 .table{
       margin-top: -70px;
       height: 60dvh;
+      overflow-y: scroll;
     }
 
     .containerStep4 .table{
         margin-top: -70px;
-
-        width: 150px;
+        width: 175px;
         margin-right: auto;
 
     }
@@ -884,6 +888,12 @@ input[type='range'] {
         height: 130px;
         margin-right: 5px;
         
+    }
+    .containerStep3 .table .column:last-child{
+        display: block;
+        background-color: #0F4E05;
+        margin-top: 500px;
+
     }
 
     div.bar{
@@ -920,20 +930,23 @@ input[type='range'] {
     }
     
     .containerStep2 .texto{
-        font-size: 100%
+        font-size: 3dvh
     }
 
     .containerStep2 .nome{
-        font-size: 150%;
+        font-size: 3dvh;
     }
 
     .containerStep2 h1#novo_idioma{
         width: 100%;
         margin-left: 0%;
         margin-right: auto;
-        font-size: 175%;
+        font-size: 4dvh;
     }
 
+    .containerStep2 h2#languageHello{
+        font-size: 4dvh;
+    }
 
     
     h1#novo_idioma{
@@ -945,8 +958,9 @@ input[type='range'] {
     }
     h1 {
         margin-top: 100px;
-        font-size: 225%;
+        font-size: 4dvh;
         width: 50dvh;
+        margin-bottom: 80px;
     }
     #idioma{
         margin-top: 10dvh;

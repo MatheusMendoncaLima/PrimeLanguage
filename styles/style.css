@@ -2,8 +2,8 @@
 :root{
     --margin-left: Calc(50% - 20dvw);
     --margin-right: Calc(50% + 20dvw);
-    --CarrouselFlagAmount: 0;
-    --CarrouselFlagSlide: 6;
+    --CarrouselFlagAmount: 9;
+    --CarrouselFlagSlide: 1;
 }
 
 @font-face {
@@ -126,11 +126,6 @@ main a#startnowGreen{
     font-family: AkiraExpanded;
     align-items: center;
     justify-content: center;
-}
-@media (max-width: 1080px) {
-    main a#startnowGreen {
-        font-size: 2vw;
-    }
 }
 
 
@@ -492,12 +487,11 @@ a.noDecoration{
     }
 
     main a#startnowGreen{
-        width: 50%;
+        width: 80%;
         height: 5%;
-        font-size: 10%;
         margin-top: 7%;
         margin-bottom: 7%;
-        
+        font-size: 20px;
         margin-left: auto;
         margin-right: 22%;
         
@@ -566,7 +560,7 @@ a.noDecoration{
     }
 
     main a#startnowBlue{
-        width: 50%;
+        width: 70%;
         height: 5%;
         font-size: 200%;
         
@@ -694,10 +688,10 @@ a.noDecoration{
     }
 
     main a#startnowGreen{
-        width: 60%;
+        width: 80%;
         border-radius: 50px;
-        
-        margin-right: 16%;
+        padding: 20px;
+        transform: translateX(19%);
         
     }
 
@@ -732,7 +726,7 @@ a.noDecoration{
     }
 
     main a#startnowBlue{
-        width: 50%;
+        width: 80%;
         font-size: 150%;
         
     }
