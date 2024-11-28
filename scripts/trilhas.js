@@ -22,14 +22,7 @@ const allKeepLanguage = document.getElementsByClassName("keepLanguage");
 const allKeepLevel = document.getElementsByClassName("keepLevel");
 const levelNameBox =  document.getElementById("currentLevelName")
 const listaNiveis = document.getElementsByClassName("lista-niveis")[0];
-const levelNames = {"english": {
-    "a1": ["Iniciante A1", "imgs/icons/beginner.png"],
-    "a2": ["Básico A2", "imgs/icons/beginner.png"],
-    "b1": ["Intermediário B1", "imgs/icons/intermediate.png"],
-    "b2": ["Intermediário/Avançado B2‎ ‎ ‎ ‎ ‎ ‎ ‎ ", "imgs/icons/intermediate.png"],
-    "c1": ["Avançado C1", "imgs/icons/advanced.png"],
-    "c2": ["Fluente C2", "imgs/icons/advanced.png"],
-}}
+
 
 const LANGUAGES = {
     "english" : ["HELLO!", "Inglês"],
@@ -45,9 +38,17 @@ const LANGUAGES = {
 }
 const language = dict["language"];
 const level = dict["level"].toLowerCase();
+var levelNames;
 
-
-
+fetch("../jsons/trilhas.json").then(response => {
+    if (!response.ok){
+        throw new Error("carrou nao");
+    }
+    return response.json();
+}).then(data=> {
+    levelNames=data["proeficiencyLevels"]
+    code()
+}).catch(error => console.error("Error", error))
 
 
 
@@ -57,15 +58,17 @@ for(i=0; i< allKeepLanguage.length; i++){
 for(i=0; i< allKeepLevel.length; i++){
     allKeepLevel[i].href+="level="+level;
 }
+function code() {
 
 
 if(flag != null){
     flag.src= "imgs/flags/"+language+".png"
     
 }
-
+//pagina trilhas
 const module = document.getElementById(level.toUpperCase());
 if(module!= null){
+    //dropdown
     dropDownFlag.src = "imgs/flags/"+language+".png";
     courseName.innerHTML = LANGUAGES[language][1] + " completo"
     levelNameBox.innerHTML = levelNames[language][level][0]
@@ -93,4 +96,9 @@ if(module!= null){
         listaNiveis.appendChild(placeholderLevelLi)
 
     }
+
+    //modulos
+    
+}
+
 }

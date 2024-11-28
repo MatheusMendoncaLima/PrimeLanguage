@@ -1,0 +1,45 @@
+{
+    "proeficiencyLevels":{
+        "english": {
+            "a1": ["Iniciante A1", "imgs/icons/beginner.png"],
+            "a2": ["Básico A2", "imgs/icons/beginner.png"],
+            "b1": ["Intermediário B1", "imgs/icons/intermediate.png"],
+            "b2": ["Intermediário/Avançado B2‎ ‎ ‎ ‎ ‎ ‎ ‎ ", "imgs/icons/intermediate.png"],
+            "c1": ["Avançado C1", "imgs/icons/advanced.png"],
+            "c2": ["Fluente C2", "imgs/icons/advanced.png"]
+        },
+        "portuguese": {
+            "a1" : ["iniciante n1", "imgs/icons/beginner.png"]
+        }
+    },
+
+    "modules" : {
+        "english": { 
+            "a1" : [["Capitulo 1: Introdução",
+            [
+                "imgs/icons/trilhas/formulating sentences.png",
+                "imgs/icons/trilhas/basic conversation.png",
+                "imgs/icons/trilhas/game time.png",
+                "imgs/icons/trilhas/introduce yourself.png",
+                "imgs/icons/trilhas/refering to someone.png",
+                "imgs/icons/trilhas/vocabulary review.png",
+                "imgs/icons/trilhas/exam.png"
+            ],
+            [
+              "Hello!",
+              "Formulating sentences",
+              "Basic conversation",
+              "Game time!",
+              "Introduce yourself",
+              "Refering to someone",
+              "Vocabulary review"
+            ], [
+
+                 ]], []],
+            "a2" : [[], []],
+            "b1" : [[], []],
+            "b2" : [[], []],
+            "c1" : [[], []]
+        }
+    }
+}
