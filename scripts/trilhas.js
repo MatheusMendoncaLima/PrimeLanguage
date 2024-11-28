@@ -47,6 +47,7 @@ fetch("../jsons/trilhas.json").then(response => {
     return response.json();
 }).then(data=> {
     levelNames=data["proeficiencyLevels"]
+    alert(Object.keys(data["proeficiencyLevels"]))
     code()
 }).catch(error => console.error("Error", error))
 
@@ -98,7 +99,7 @@ if(module!= null){
     }
 
     //modulos
-    
+
 }
 
 }
