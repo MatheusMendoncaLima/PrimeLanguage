@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/style-login.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar"><!--sei la man 2-->
+            <a class="logo" href="index.html"><img src="imgs/icons/prime_language.png" alt="" id="imagemlogo"></a>
+            <ul class="nav-list">
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <form method="get" class="login">
+        <div class="text_left">
+        <h1 id="novo_idioma">Bem-vindo de volta, vamos logar!</h1>
+        </div>
+            <div id="boxes">
+            
+            <fieldset class="space_text">
+                <label for="email"  class="nome">Seu email</label>
+                <input name="email" type="email" placeholder="Email" class="texto" required>
+
+                <br>
+            </fieldset> 
+            
+            <fieldset class="space_text">
+                <label for="senha" class="nome">Senha </label>
+                <input name="senha" type="password" placeholder="Senha (min. 5 caracteres)" class="texto" required>
+            </fieldset>
+
+            
+            </div>
+            
+
+            <input id="languageFormValue" type="hidden" name="language" value="">
+            <input type="submit" class="botao" value="ENTRAR"  >
+    </form>
+
+</body>
+</html>
