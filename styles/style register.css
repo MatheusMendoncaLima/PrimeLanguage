@@ -471,18 +471,24 @@ div.barValue{
     position: relative;
     display: block;
     height: 100%;
-    width: var(--prevBarValue);
     border-radius: 150PX;
     background-color: #6EBEAF;
-    animation: barValue 2s ease-in forwards 0s;
-    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+
 
 }
 
+.barAnimation{
+    animation: barValue 2s ease-in forwards 0s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 @keyframes barValue{
+    0% {
+        width: var(--prevBarValue);
+    }
     100% {
         width: var(--barValue);
-
     }
 }
 

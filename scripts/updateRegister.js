@@ -93,7 +93,7 @@ if(Object.keys(dict).length == 0){
 
     }
 
-    growBarValue(40,60);
+    growBarValue(40,55);
 
 }else if (LANGUAGES[language] != null && user != null && motivation != null && level == null){
     r.style.setProperty('--displayStep4', "block");
@@ -101,7 +101,7 @@ if(Object.keys(dict).length == 0){
 
     moveBg(50,0, -26, 0)
 
-    growBarValue(60, 80)
+    growBarValue(55, 70)
 
     for (var i =0; i< STEP4_TABLE_ELEMENTS.length; i++) {
         var key = STEP4_TABLE_ELEMENTS[i];
@@ -117,7 +117,7 @@ if(Object.keys(dict).length == 0){
         window.location.replace("test.html?language="+language);
     }else{
         r.style.setProperty('--displayStep5', "block");
-        growBarValue(80,100)
+        growBarValue(65,100)
         STEP5_START_BUTTON.href+="?language="+language+"&level=a1"
 
     }

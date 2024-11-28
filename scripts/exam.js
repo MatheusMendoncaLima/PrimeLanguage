@@ -6,6 +6,7 @@ const testContainer = document.getElementById("test-container")
 const resultsContainer = document.getElementById("results-container")
 const resultOutput = document.getElementById("result")
 const gotoCourseButton = document.getElementById("start")
+const barValueDiv = document.getElementsByClassName("barValue")[0];
 /*
 use: answers[language][difficultLevel][question]
      [0][0] is the question statement
@@ -76,7 +77,7 @@ let totalQuestions = 0;
 
 let rightAnswered = 0;
 let wrongAnswered = 0;
-
+let barValue = 70;
 var url = window.location.href;
 
 
@@ -93,23 +94,24 @@ params.forEach(param => {
     dict[param.split("=")[0]] =  param.split("=")[1]; 
     }
 });
-growBarValue(80, 80);
 
 const language = dict["language"];
 const level = dict["level"];
 
 if (level != null){
+    growBarValue(100,100);
     gotoCourseButton.href += "?language="+language+"&level="+level
     resultsContainer.style.display = "block"
     resultOutput.innerHTML = level.toUpperCase()
-    growBarValue(80, 100);
 
 }else {
+    growBarValue(70, 70);
     preTestContainer.style.display = "block"
     
 }
 
 function startTest(){
+
     testContainer.style.display = "block"
     preTestContainer.style.display = "none"
 
@@ -146,6 +148,8 @@ async function answer(answer, letterIndex){
     effectBoxes[letterIndex].classList.add(givenClass)
     
     effectBoxes[letterIndex].checked=true;
+    growBarValue(barValue, barValue+1);
+
     await new Promise(r => setTimeout(r, 1000));
     currentQuestion++;
     answeredQuestions++;
@@ -154,6 +158,7 @@ async function answer(answer, letterIndex){
    updateQuestion();
    answerButtons[letterIndex].style.color= "black"
    clicked=false
+   
 }
 }
 
@@ -179,7 +184,6 @@ function updateQuestion(){
     }
 
 
-    
     question.innerHTML = (answeredQuestions+1) + ". " + getCurrentQustionStatement()
 }
 
@@ -220,10 +224,18 @@ function getRightAnswer(lang, level, question){
 function getAnswers(lang, level, question){
     return answers[lang][level][question][1];
 }
-
 function growBarValue(prev, post){
+    barValue = post;
+
     //r.style.setProperty('--barValue', "40%");
+    barValueDiv.style.animation = "none"
+    setTimeout(()=> {
+
+        barValueDiv.style.animation = null
+
+    })
 
     root.style.setProperty('--prevBarValue', prev+"%" );
     root.style.setProperty('--barValue', post+"%");
+
 }
