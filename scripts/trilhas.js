@@ -496,10 +496,9 @@ if(dropDownFlag!= null){
         const placeholderLevelH1 = document.createElement("h1");
         const placeholderLevelImg = document.createElement("img");
 
-        placeholderLevelLi.appendChild(placeholderLevelA)
-        placeholderLevelA.appendChild(placeholderLevelImg)
-
-        placeholderLevelA.appendChild(placeholderLevelH1)
+        placeholderLevelA.appendChild(placeholderLevelLi)
+        placeholderLevelLi.appendChild(placeholderLevelImg)
+        placeholderLevelLi.appendChild(placeholderLevelH1)
 
         placeholderLevelLi.classList.add("niveis")
 
@@ -510,7 +509,7 @@ if(dropDownFlag!= null){
         if(Object.keys(levelNames[language])[i] == level){
             placeholderLevelLi.style.backgroundColor = "#5CDC8F"
         }
-        listaNiveis.appendChild(placeholderLevelLi)
+        listaNiveis.appendChild(placeholderLevelA)
 
     }
 
@@ -535,9 +534,9 @@ if(dropDownFlag!= null){
         const img = document.createElement("img")
         const title = document.createElement("h3")
         const description = document.createElement("h4")
-        img.src = turnInJsonAfter["modules"]["english"]["a1"][i][1][j]
-        title.innerHTML=turnInJsonAfter["modules"]["english"]["a1"][i][2][j]
-        description.innerHTML=turnInJsonAfter["modules"]["english"]["a1"][i][3][j]
+        img.src = turnInJsonAfter["modules"][language][level][i][1][j]
+        title.innerHTML=turnInJsonAfter["modules"][language][level][i][2][j]
+        description.innerHTML=turnInJsonAfter["modules"][language][level][i][3][j]
         lesson.appendChild(img)
         lesson.appendChild(title)
         lesson.appendChild(description)
