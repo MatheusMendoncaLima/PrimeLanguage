@@ -60,7 +60,7 @@ const answers = {
     ],
     "spanish": [
         [ // a1
-            [["Elige la palabra correcta: 'Este es mi ___. (padre)'", "padre"], ["madre", "hermana", "padre", "amigo", "No sé"]],
+            [["Elige la palabra correcta: 'Este es mi ___. (pai)'", "padre"], ["madre", "hermana", "padre", "amigo", "No sé"]],
             [["Elige el artículo correcto: '___ manzana es roja.'", "Una"], ["Una", "Un", "La", "Cualquier", "No sé"]],
             [["¿De qué color es el libro?", "Rojo"], ["Azul", "Rojo", "Verde", "Amarillo", "No sé"], "audios/Script A1 - Spanish.mp3"],
             [["Elige la forma correcta: 'Ella ___ café todas las mañanas.'", "bebe"], ["bebe", "bebes", "bebiendo", "bebió", "No sé"]],
