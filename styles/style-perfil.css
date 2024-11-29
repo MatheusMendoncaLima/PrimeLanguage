@@ -1,0 +1,415 @@
+.estatisticas{
+    margin-right: 50px;
+    width: 650px;
+    height: 1160px;
+    border-radius: 45pt;
+    border: black 2px solid;
+    text-align: center;
+    margin-top: 80px;
+}
+.titulo{
+    margin-top: 50px;
+    font-size: 42px ;
+}
+.grafico{
+    margin-top: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.palavras{
+    width: 602px;
+    height: 252px;
+    border-radius: 45pt;
+    border: black 2px solid;
+    text-align: center;
+    margin-top: 110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.distancia-p{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.titulo-p{
+    font-size: 56px;
+    margin-top: 10px;
+}
+.numero{
+    font-size: 57px;
+    color: rgb(110, 190, 175);
+    margin-right: -50px;
+}
+.grafico-p{
+    margin-left: -50px;
+}
+
+
+
+.amigos{
+    width: 831px;
+    height: 408px;
+    border-radius: 45pt;
+    border: black 2px solid;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 190px;
+}
+.titulo-amigos{
+    font-size: 72px;
+}
+.texto-amigos{
+    font-size: 56px;
+}
+.conteudo-amigos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.sequencia{
+    width: 1700px;
+    height: 489px;
+    border-radius: 45pt;
+    border: black 2px solid;
+    text-align: center;
+    margin: 20px auto;
+    margin-top: 60px;
+}
+.titulo-sequencia{
+    font-size: 70px;
+    margin-bottom: 2px;
+}
+.subtitulo{
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+.conteudo-sequencia{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.semana{
+    text-align: center;
+    margin-top: -8px;
+}
+.dias-semana{
+    display: flex;
+    gap: 20px;
+}
+.dia{
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: black 2px solid;
+    font-size: 36px;
+    color: black;
+}
+.dia.ativo{
+    background-color: rgb(107, 120, 234);
+    color: white;
+}
+.dias-ativos{
+    width: 509px;
+    height: 314px;
+    border-radius: 45pt;
+    border: black 2px solid;
+    text-align: center;
+}
+.numero-dias{
+    font-size: 70px;
+    color: rgb(110, 190, 175);
+}
+.superior-dias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+.superior-dias img {
+    margin-top: 35px; 
+}
+
+
+
+.foto-perfil{
+    width: 1080px;
+    height: 627px;
+    display: flex;
+    justify-content: space-between;
+}
+.foto{
+    width: 495px;
+    height: 627px;
+}
+.pessoa-foto{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+}
+.texto-editar{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+.editar{
+    font-size: 46px;
+}
+.lapis{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.texto-perfil{
+    width: 585px;
+    height: 627px;
+    text-align: center;
+}
+.name{
+    font-size: 30px;
+    margin-top: 100px;
+}
+.lugar{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+.texto-lugar{
+    font-size: 30px;
+}
+.casa{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+
+.perfil-amigo{
+    width: 1080px;
+    height: 1200px;
+}
+.perfil-estatisticas{
+    height: 1300px;
+    width: 1920px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.navbar{
+    margin-left: -10px;
+    background-color: #F8F8FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 50px;
+    position: fixed; 
+    top: 0; 
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+#logo{
+    margin-left: 20px;
+    margin-top: 5px;
+    height: 55px;
+}
+a:hover{
+    position: relative;
+    opacity: 0.7;
+    z-index: 10;
+    transition: 0.3s;
+}
+.nav_links_desktop{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: auto;
+}
+.nav_links_desktop li{
+    padding: 0px 15px;
+}
+.nav_links_desktop a{
+    color: #000000;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: large;
+    margin-left: 50px;
+}
+.navbarBaixo{/*navbar que vai ficar em baixo quando for para telas menores*/
+    box-shadow: 0px -2px 20px rgba(0, 0, 0, 0.39);
+    background-color: #F8F8FF;
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    bottom: 0; 
+    z-index: 10;
+}
+@media (max-width: 768px) {
+    .nav_links_desktop {
+        display: none;
+    }
+    .navbarBaixo{
+        display: flex;
+    }
+    
+}
+.nav_links_mobile{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 40px;
+    padding: 0;
+}
+.nav_links_mobile li{
+    margin: 30px;
+}
+.icondesk{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.imagensBaixo{
+    height: 25px;
+    
+}
+#verdinhoBaixo{
+    border-radius: 5px;
+    background-color: #5CDC8F;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+.iconesdireita{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+#bandeira{
+    height: 25px;
+    border-radius: 5px;
+    margin-right: 25px;
+    border: #000000 solid 1px ;
+    margin-top: 7px;
+}
+#ftperfil{
+    height: 50px;
+    margin-right: 40px;
+    border-radius: 100%;
+}
+#fogo{
+height: 30px;
+border-radius: 5px;
+margin-right: 25px;
+margin-top: 7px;
+}
+#learnicon{
+    float: left;
+    margin-top: -8px;
+    height: 25px;
+}
+#cursosicon{
+    float: left;
+    margin-top: -8px;
+    height: 25px;
+}
+#comunidadeicon{
+    
+    float: left;
+    margin-top: -8px;
+    height: 25px;
+}
+.nav_links_mobile{
+    margin-left: -10px;
+}
+.menu{
+    border-radius: 15px;
+    position: absolute;
+    min-height: 170px;
+    right: 50px;
+    width: 180px;
+    top: calc(100% + 10px);
+    background-color: #F8F8FF;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.2);
+    user-select: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.menu.ativo{
+    opacity: 1;
+    visibility: visible;
+}
+.menu li{
+    list-style-type: none;
+    padding: 10px 10px;
+    transition: 0.5s;
+}
+.menu li:hover{
+    background-color: #d9d9da;
+}
+.menu ul{
+    margin-top: -1px;
+    margin-bottom: -2px;
+    padding: 0px 0px 0px 0px;
+}
+.menu ul li a{
+    margin: 4px;
+    text-decoration: none;
+    color: #000;
+    font-size: large;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+.menu ul{
+    display: flex;
+    flex-direction: column;
+}
+.menu ul li a ion-icon{
+    font-size: 1.5rem;
+}
+#baixo:hover{
+    background-color: #d9d9da;
+    border-bottom-left-radius: 15px; 
+    border-bottom-right-radius: 15px; 
+}
+#cima:hover{
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px; 
+}
+.perfil{
+    cursor: pointer;
+}
+#learnicon{
+    color: #00B593;
+}
+.icondesk{
+    border-radius: 20px;
+    background-color: #F8F8FF;
+    gap: -6px;
+    padding: 10px 10px 10px ;
+}
+#verdinho{
+    background-color: #5CDC8F;
+}
