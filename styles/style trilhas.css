@@ -546,14 +546,17 @@ div.module{
     margin-bottom: -120px;
 }
 
-.space_cards{
+.space_cards {
+    margin-right: 40px;
     margin-left: 150px;
-    margin-top: 60px;
-    width: 90dvw;
-    height: auto;
+    margin-top: 50px;
     display: inline-block;
+    width: 100%; /* Garante que o espaço ocupe a largura da tela */
+    box-sizing: border-box; /* Garante que a margem não afete o tamanho */
 }
-.cards{
+
+/* Estilo dos cards */
+.cards {
     margin-right: 40px;
     display: inline-block;
     width: 350px;
@@ -561,41 +564,122 @@ div.module{
     border-radius: 30px;
     background-color: #eeecec;
     background-repeat: no-repeat;
-
+    box-sizing: border-box; /* Para garantir que o padding e a margem não afetam o tamanho */
 }
-.cards td:hover{
+
+/* Estilo para o hover no card */
+.cards td:hover {
     background-color: #eefeff;
 }
-.cards h1{
+
+/* Títulos dentro dos cards */
+.cards h1 {
     font-size: medium;
     color: rgb(0, 0, 0);
     text-shadow: 0px 0px 3px white;
     font-weight: 10000;
     text-align: center;
     font-family: AkiraExpanded;
-
 }
-.cards h2{
+
+.cards h2 {
     font-size: small;
     text-shadow: 0px 0px 3px white;
     font-weight: 500;
     text-align: left;
-
 }
-.cards h3{
+
+.cards h3 {
     font-size: smaller;
     text-shadow: 0px 0px 3px white;
     text-align: left;
     font-weight: 500;
-
 }
 
-
-.cards .text{
+/* Seção de texto dentro do card */
+.cards .text {
     width: 60%;
     float: right;
 }
+@media (max-width: 786px){
+    .cards {
+        margin-right: 5px;
+    }
+}
+@media (max-width: 768px) {
+    .space_cards {
+        margin-left: 180px; /* Menos margem nas pequenas */
+        width: 50%;
+    }
 
+    .cards {
+        width: 100%; /* Cards ocupam 100% da largura da tela */
+        margin-right: 2px; /* Menos margem */
+        height: 250px; /* A altura do card ajusta automaticamente */
+        margin-bottom: 20px;
+    }
+
+    /* Ajustar o tamanho das fontes para telas pequenas */
+    .cards h1 {
+        font-size: 1.2em;
+    }
+
+    .cards h2 {
+        margin-left: 100px;
+        font-size: 1em;
+    }
+
+    .cards h3 {
+        margin-left: 100px;
+        font-size: 0.9em;
+    }
+
+    /* Ajusta o texto para telas menores */
+    .cards .text {
+        width: 100%; /* Aumenta o texto para ocupar toda a largura */
+        float: none; /* Remove o float */
+        margin-top: 10px; /* Adiciona uma margem no topo */
+    }
+}
+
+/* Para telas extra pequenas (como celulares), deixamos os cards em uma coluna */
+@media (max-width: 480px) {
+    #andamento{
+        margin-top: 100px;
+        font-family: JetBrainsMono-Bold;
+        font-size: larger;
+        margin-bottom: -50px;
+        margin-left: 10px;
+    }
+    .space_cards {
+        margin-left: 100px;
+        margin-top: 70px;
+
+    }
+    .cards {
+        width: 120%; /* Cards ocupam 100% da largura da tela */
+        margin-right: 10px;
+        margin-bottom: 20px; /* Adiciona um espaçamento entre os cards */
+    }
+
+    .cards h1 {
+        font-size: 1.1em;
+    }
+
+    .cards h2 {
+        font-size: 0.9em;
+    }
+
+    .cards h3 {
+        font-size: 0.8em;
+    }
+
+    .cards .text {
+        width: 100%;
+        margin-top: 10px;
+        padding: 10px;
+    }
+}
 #liberdade{
     background-image: url("../imgs/background/the_statue_of_liberty.png");
     background-size: 350px;
@@ -620,6 +704,7 @@ div.module{
     margin-bottom: -50px ;
 }
 #andamento{
+    margin-top: 100px;
     font-family: JetBrainsMono-Bold;
     font-size: larger;
     margin-bottom: -50px;
