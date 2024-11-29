@@ -1172,12 +1172,13 @@ div.drop-nivel.ativo{
     padding: 5px;
     border-radius: 1500px;
 }
-.lista-niveis li a{
-    display: flex;
+.lista-niveis a{
     text-decoration: none;
     color: #000;
     margin-top: 30px;
 }
+
+
 .lista-niveis li a img{
     padding: 5px 5px 5px;
     margin-top: -25px;

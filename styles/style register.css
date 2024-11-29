@@ -558,7 +558,8 @@ h2#question{
     margin-bottom: 100px;
     font-family: JetBrainsMono-Regular;
     text-align: center;
-    font-size: 30px;
+    font-size: 23px;
+    height: 150px;
 }
 
 #pre-test-container h1{
@@ -579,7 +580,8 @@ h3.answer{
     width:30%;
     margin-left: auto;
     margin-right: auto;
-    font-size: 20px;
+    font-size: 17px;
+    height: 40px;
 
 }
 #results-container a#start{
@@ -594,12 +596,11 @@ h3.answer{
 #audio-container{
     border: 2px solid black;
     border-radius: 300px;
-
-
-    float:right;
-    margin-top: -150px;
-    margin-right: 35%;
+    margin-left: auto;
+    margin-right: auto;
     display: none;
+    height: 40px;
+    margin-top: -350px;
 }
 
 audio::-webkit-media-controls-time-remaining-display, audio::-webkit-media-controls-current-time-display{
@@ -974,7 +975,41 @@ input[type='range'] {
     }
 
     
+    h2#question, #pre-test-container h1, h3.answer{
+        width: 80%;
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
 
+    h2#question{
+        margin-top: 25%;
+        height: 25%;
+        margin-bottom: 50px;
+    }
+
+    h3.answer{
+        height: 30px;
+    }
+
+    #audio-container{
+        position: static;
+        margin-top: -300px;
+    }
+
+    #results-container h1{
+        margin-bottom: -100px;
+    }
+
+    .effect{
+        margin-left: 15px;
+    }
+
+    .botao#start, .botao#startTest{
+        width: 50%;
+    }
+    
 }
 
 @media screen and (max-width:400px) {
