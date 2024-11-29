@@ -38,21 +38,21 @@ const answers = {
         ],
         [ // b2
             [["Complete the sentence: 'If I had known, I ____ have told you.'", "would"], ["would", "will", "could", "should", "Não sei"]],
-            [["What is the goal of the new project?", "Reduce pollution"], ["Increase pollution", "Clean the entire city", "Reduce pollution", "Expand the city", "Não sei"]],
+            [["The new project is ambitious and aims to reduce pollution in the city by 30% over the next five years. \n \n What is the goal of the new project?", "Reduce pollution"], ["Increase pollution", "Clean the entire city", "Reduce pollution", "Expand the city", "Não sei"]],
             [["What does she prefer to do in the summer?", "Stay in cooler places"], ["Stay in cooler places", "Go to the beach", "Swim in the pool", "Travel abroad", "Não sei"], "audios/Script B2.mp3"],
             [["Choose the correct option: 'You ____ leave now if you want to catch the train.'", "should"], ["can’t", "should", "wouldn’t", "might not", "Não sei"]],
             [["Choose the correct answer: 'After the argument, they finally decided to ____ and forgive each other.'", "make up"], ["hold on", "look up", "make up", "take over", "Não sei"]]
         ],
         [ // c1
             [["Choose the correct option: 'Despite ____ the exam, he was accepted to the program.'", "failing"], ["failing", "fail", "fails", "failed", "Não sei"]],
-            [["What is the primary goal of the company’s initiative?", "Reduce waste"], ["Increase waste production", "Clean the entire city", "Reduce waste", "Expand its business", "Não sei"]],
+            [["The company’s new initiative focuses on sustainability and aims to reduce waste by implementing recycling practices across all branches. \n \n What is the primary goal of the company’s initiative?", "Reduce waste"], ["Increase waste production", "Clean the entire city", "Reduce waste", "Expand its business", "Não sei"]],
             [["What is one disadvantage of working from home mentioned in the audio?", "It can lead to isolation"], ["It increases productivity", "It can lead to isolation", "It saves time", "It improves focus", "Não sei"], "audios/Script C1.mp3"],
             [["Choose the correct form: 'The project ____ completed by the end of the year.'", "will be"], ["will be", "was being", "is", "are", "Não sei"]],
             [["Choose the best option: 'Although the decision was unpopular, it was deemed ____ for the success of the company.'", "necessary"], ["enjoyable", "necessary", "optional", "trivial", "Não sei"]]
         ],
         [ // c2
             [["Choose the most suitable phrase: 'The project is ___ delayed, as the team is still gathering data.'", "provisionally"], ["provisionally", "circumstantially", "relatively", "definitively", "Não sei"]],
-            [["What is one purpose of artistic expression?", "To reflect societal values"], ["To reflect societal values", "To entertain without purpose", "To avoid controversial topics", "To follow traditional norms", "Não sei"]],
+            [["Artistic expression is often a reflection of societal values, challenging norms and provoking thought among audiences. \n \n What is one purpose of artistic expression?", "To reflect societal values"], ["To reflect societal values", "To entertain without purpose", "To avoid controversial topics", "To follow traditional norms", "Não sei"]],
             [["What challenge is mentioned regarding technology?", "It makes personal connections harder to maintain"], ["It improves personal connections", "It is too costly", "It makes personal connections harder to maintain", "It has no effect on relationships", "Não sei"], "audios/Script C2.mp3"],
             [["Choose the correct answer: 'The author ___ light on an issue that is often overlooked in society.'", "sheds"], ["sheds", "shows", "brings", "reveals", "Não sei"]],
             [["Complete the sentence with the most suitable option: 'After years of research, the scientist finally ___ the theory that had puzzled her peers for decades.'", "validated"], ["validated", "approximated", "ignored", "questioned", "Não sei"]]
