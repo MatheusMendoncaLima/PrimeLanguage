@@ -147,42 +147,42 @@ const answers = {
         ]
     ],
     "chinese": [
-        [ // HSK 1 (Iniciante absoluto)
+        [ // hsk 1 (Iniciante absoluto)
             [["O que significa '一'?", "um"], ["um", "dois", "três", "quatro", "Não sei"]],
             [["Escolha a resposta certa: '猫' significa o quê?", "gato"], ["gato", "cachorro", "pássaro", "peixe", "Não sei"]],
             [["Qual destes é o número 2?", "二"], ["一", "二", "三", "四", "Não sei"]],
             [["Escolha o símbolo para 'água'.", "水"], ["水", "火", "土", "木", "Não sei"]],
             [["O que significa '山'?", "montanha"], ["rio", "árvore", "montanha", "sol", "Não sei"]]
         ],
-        [ // HSK 2 (Básico)
+        [ // hsk 2 (Básico)
             [["Escolha a resposta correta: '我' significa o quê?", "eu"], ["eu", "você", "ele", "ela", "Não sei"]],
             [["Qual o significado de '日'?", "sol"], ["lua", "sol", "estrela", "planeta", "Não sei"]],
             [["Escolha a resposta correta: '你好' significa?", "olá"], ["olá", "tchau", "bom dia", "boa noite", "Não sei"]],
             [["Complete a frase: '我喜欢___。'", "gato"], ["gato", "cachorro", "pássaro", "peixe", "Não sei"]],
             [["Qual desses é 'mãe' em chinês?", "妈妈"], ["爸爸", "妈妈", "老师", "朋友", "Não sei"]]
         ],
-        [ // HSK 3 (Intermediário)
+        [ // hsk 3 (Intermediário)
             [["Qual é a leitura correta para '学生'?", "xuéshēng"], ["xuéshēng", "lǎoshī", "rén", "xiǎo", "Não sei"]],
             [["Qual é a tradução de '吃'?", "comer"], ["beber", "comer", "correr", "andar", "Não sei"]],
             [["O que significa '学校'?", "escola"], ["escola", "universidade", "livro", "cidade", "Não sei"]],
             [["Qual a tradução de '朋友'?", "amigo"], ["amigo", "namorado", "irmão", "cachorro", "Não sei"]],
             [["Escolha a tradução correta: '我有很多书。'", "Eu tenho muitos livros."], ["Eu tenho muitos livros.", "Eu tenho poucos livros.", "Eu gosto de livros.", "Eu não tenho livros.", "Não sei"]]
         ],
-        [ // HSK 4 (Avançado)
+        [ // hsk 4 (Avançado)
             [["Qual é o significado de '经济'?", "economia"], ["economia", "política", "história", "física", "Não sei"]],
             [["Qual é a tradução de '文化'?", "cultura"], ["cultura", "arte", "teatro", "esporte", "Não sei"]],
             [["Complete a frase: '我___中国菜。'", "gosto de"], ["gosto de", "não gosto de", "estudo", "ensino", "Não sei"]],
             [["Escolha a tradução correta: '她是我的朋友。'", "Ela é minha amiga."], ["Ela é minha amiga.", "Ela é minha professora.", "Ela é minha irmã.", "Ela é minha mãe.", "Não sei"]],
             [["O que significa '生日'?", "aniversário"], ["nascimento", "casamento", "aniversário", "viagem", "Não sei"]]
         ],
-        [ // HSK 5 (Avançado)
+        [ // hsk 5 (Avançado)
             [["O que significa '理想'?", "ideal"], ["ideal", "realidade", "plano", "emoção", "Não sei"]],
             [["Qual é a tradução de '社会'?", "sociedade"], ["sociedade", "cultura", "política", "esporte", "Não sei"]],
             [["Complete a frase: '我们在___工作。'", "empresa"], ["empresa", "escola", "hospital", "casa", "Não sei"]],
             [["Escolha a tradução correta: '我对中国历史很感兴趣。'", "Eu estou muito interessado na história da China."], ["Eu estou muito interessado na história da China.", "Eu gosto de história.", "Eu não gosto de história.", "Eu estudo história.", "Não sei"]],
             [["Qual é o significado de '技术'?", "tecnologia"], ["tecnologia", "história", "arte", "educação", "Não sei"]]
         ],
-        [ // HSK 6 (Fluente)
+        [ // hsk 6 (Fluente)
             [["O que significa '创新'?", "inovação"], ["inovação", "moda", "tendência", "política", "Não sei"]],
             [["Qual é o significado de '全球化'?", "globalização"], ["globalização", "nacionalismo", "indústria", "tecnologia", "Não sei"]],
             [["Complete a frase: '他的___非常好。'", "habilidades"], ["habilidades", "opiniões", "pensamentos", "visões", "Não sei"]],
@@ -272,35 +272,42 @@ const answers = {
         ]
     ],
     "korean": [
-        [ // TOPIK I (Nível 1 e 2 - Iniciante)
+        [ // topik I (Nível 1 e 2 - Iniciante)
             [["O que significa '고양이'?", "gato"], ["gato", "cachorro", "pássaro", "peixe", "Não sei"]],
             [["Qual é a palavra para 'cachorro' em coreano?", "개"], ["개", "고양이", "새", "물고기", "Não sei"]],
             [["Escolha a palavra que significa 'casa'.", "집"], ["집", "학교", "상점", "도서관", "Não sei"]],
             [["O que significa '책'?", "livro"], ["livro", "caneta", "mesa", "caderno", "Não sei"]],
             [["Qual destas palavras significa 'amigo'?", "친구"], ["친구", "선생님", "가족", "동료", "Não sei"]]
         ],
-        [ // TOPIK I (Nível 2 - Iniciante, frases mais curtas e simples)
+        [ // topik I (Nível 2 - Iniciante, frases mais curtas e simples)
             [["Complete a frase: '나는 ___을 좋아해요.'", "고양이"], ["고양이", "개", "새", "책", "Não sei"]],
             [["Escolha a tradução para '먹다'.", "comer"], ["comer", "beber", "dormir", "estudar", "Não sei"]],
             [["Qual é a palavra para 'escola' em coreano?", "학교"], ["학교", "회사", "도서관", "집", "Não sei"]],
             [["O que significa '일'?", "trabalho"], ["trabalho", "escola", "casa", "loja", "Não sei"]],
             [["Escolha a tradução para '친구'.", "amigo"], ["amigo", "inimigo", "professor", "vizinho", "Não sei"]]
         ],
-        [ // TOPIK II (Nível 3 e 4 - Intermediário)
+        [ // topik II (Nível 3 - Intermediário)
             [["Complete a frase: '오늘 나는 ___에 갔어요.'", "영화관"], ["영화관", "학교", "도서관", "병원", "Não sei"]],
             [["Escolha a tradução de '여행하다'.", "viajar"], ["viajar", "estudar", "trabalhar", "comer", "Não sei"]],
             [["O que significa '배우다'?", "aprender"], ["aprender", "ensinar", "beber", "dormir", "Não sei"]],
             [["Qual dessas palavras significa 'fácil'?", "쉽다"], ["쉽다", "어렵다", "빠르다", "느리다", "Não sei"]],
             [["Complete a frase: '그는 매일 아침에 ___을 마셔요.'", "커피"], ["커피", "물", "주스", "차", "Não sei"]]
         ],
-        [ // TOPIK II (Nível 5 - Avançado)
+        [ // TOPIK II (Nível 4 - Intermediário)
+            [["Complete a frase: '이 가방은 너무 ___.'", "비싸요"], ["비싸요", "싸요", "좋아요", "나빠요", "Não sei"]],
+            [["Escolha a tradução de '건강하다'.", "ser saudável"], ["ser saudável", "ser rápido", "ser devagar", "ser pequeno", "Não sei"]],
+            [["O que significa '기쁘다'?", "estar feliz"], ["estar feliz", "estar triste", "estar zangado", "estar cansado", "Não sei"]],
+            [["Associe a palavra '역사' ao seu significado.", "história"], ["história", "geografia", "matemática", "ciência", "Não sei"]],
+            [["Complete a frase: '친구와 같이 ___을 먹었어요.'", "점심"], ["점심", "아침", "저녁", "간식", "Não sei"]]
+        ],
+        [ // topik II (Nível 5 - Avançado)
             [["Complete a frase: '그의 말은 정말 ___.'", "유익하다"], ["유익하다", "어렵다", "행복하다", "짧다", "Não sei"]],
             [["Escolha a tradução para '책임'.", "responsabilidade"], ["responsabilidade", "liberdade", "felicidade", "culpa", "Não sei"]],
             [["O que significa '성공'?", "sucesso"], ["sucesso", "fracasso", "medo", "alegria", "Não sei"]],
             [["Qual dessas palavras significa 'complexo'?", "복잡하다"], ["복잡하다", "간단하다", "빠르다", "편리하다", "Não sei"]],
             [["Escolha a tradução para '가족'.", "família"], ["família", "amigo", "vizinho", "colega", "Não sei"]]
         ],
-        [ // TOPIK II (Nível 6 - Fluente e avançado)
+        [ // topik II (Nível 6 - Fluente e avançado)
             [["Complete a frase: '이 문제는 너무 ___.'", "복잡하다"], ["복잡하다", "간단하다", "빠르다", "명확하다", "Não sei"]],
             [["Escolha a tradução de '추구하다'.", "buscar"], ["buscar", "encontrar", "deixar", "abandonar", "Não sei"]],
             [["O que significa '신뢰'?", "confiança"], ["confiança", "medo", "dúvida", "ansiedade", "Não sei"]],
@@ -404,10 +411,10 @@ const effectBoxes = [document.getElementById("effect-a"),document.getElementById
 const proficiencyLevels = {"english" : ["a1","a2","b1","b2","c1","c2"],
                             "spanish" : ["a1","a2","b1","b2","c1","c2"],
                             "french" : ["a1","a1","b1","b2","c1","c2"],
-                            "chinese" : ["HSK-1","HSK-2"," HSK-3"," HSK-4"," HSK-5"," HSK-6"],
-                            "japanese" : ["N5","N4","N3","N2","N1"],
+                            "chinese" : ["hsk-1","hsk-2"," hsk-3"," hsk-4"," hsk-5"," hsk-6"],
+                            "japanese" : ["n5","n4","n3","n2","n1"],
                             "german" : ["a1","a2","b1","b2","c1","c2"],
-                            "korean" : ["TOPIK I (Nível 1)","TOPIK I (Nível 2)"," TOPIK II (Nível 3 e 4)","TOPIK II (Nível 5)","TOPIK II (Nível 6)"],
+                            "korean" : ["topik i (nivel 1)","topik i (nivel 2)"," topik ii (nivel 3)"," topik ii (nivel 4)","topik ii (nivel 5)","topik ii (nivel 6)"],
                             "italian" : ["a1","a2","b1","b2","c1","c2"],
                             "russian" : ["a1","a2","b1","b2","c1","c2"]
 }

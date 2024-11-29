@@ -3,7 +3,7 @@
     --margin-left: Calc(50% - 20dvw);
     --margin-right: Calc(50% + 20dvw);
     --CarrouselFlagAmount: 9;
-    --CarrouselFlagSlide: 1;
+    --CarrouselFlagSlide: 5;
 }
 
 @font-face {
@@ -98,7 +98,7 @@ div.whiteTextBalloon{
 
 div.whiteTextBalloon h1{
     margin-top: -8%;
-    font-size: 2.5vw;
+    font-size: 3dvw;
     margin-bottom: 10%;
 }
 
@@ -257,6 +257,9 @@ div.blueTextBalloon, div.greenTextBalloon{
     line-height: normal;
     border-bottom-left-radius: 90px;
     border-bottom-right-radius: 90px;
+    padding-right: 10px;
+    padding-left: 10px;
+
 
 }
 
@@ -960,6 +963,8 @@ a:hover{
 @media (max-width: 768px) {
     .iconright{
         margin-left: -50px;
+        font-size: 15px;
+        height: 10px;
     }
 
     .iconesdireita{
@@ -1005,4 +1010,57 @@ margin-top: 7px;
 }
 .imagensBaixo{
     height: 40px;
+}
+
+h1#maintaince{
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 50px;
+    margin-bottom: 50dvh;
+
+}
+button.button{
+    width: 25%;
+    font-size: 35px;
+    height: 70px;
+    padding: 10px;
+    background-color: #AFF4C6;
+    border: 3px solid black;
+    border-radius: 50px;
+    font-family: AkiraExpanded;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+button.button:hover{
+    background-color: #9df6bb;
+}
+#maintainceDiv{
+    background-image: url("../imgs/icons/mainteince.svg");
+    background-size: 30dvh;
+    background-repeat: no-repeat;
+    background-position-x: calc(50%);
+    background-position-y: 70%;
+}
+
+@media screen and (max-width:728px) {
+
+    button.button{
+        width: 80%;
+        font-size: 20px;
+    
+    }
+    h1#maintaince{
+        margin:0px;
+        margin-top: 30px;
+        
+        font-size: 30px;
+        margin-bottom: 50dvh;
+
+        
+    }
 }

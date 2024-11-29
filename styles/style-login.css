@@ -4,6 +4,10 @@
 }
 body{
     background-color: #F8F8FF;
+    background-image: url("../imgs/background/background_register.svg");
+    background-repeat: no-repeat;
+    background-size: 200dvh;
+    background-position-x: -200px;
 }
 :root{
     --prevBarValue: 5%;
@@ -22,6 +26,12 @@ body{
     --backgroundPosX: 1000px;
     --backgroundPosY: 100px;
 
+
+}
+
+body{
+    margin: 0px;
+    background-image: url("../imgs/background/background_register.svg");
 
 }
 
@@ -56,19 +66,6 @@ table h2 {
     font-family: JetBrainsMono-Thin;
 }
 body{
-    margin-top: -8px;
-    margin-left: 0px;
-    width: 100%;
-    height: 100%;
-
-
-    background-position-x: var(--prevBackgroundPosX);
-    background-position-y: var(--prevBackgroundPosY);
-
-    background-image: url("../imgs/background/background_register.svg");
-    background-repeat: no-repeat;
-    animation: bgPosition 1s ease-in forwards 0s;
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275)
 
 }
 
@@ -306,6 +303,7 @@ div.containerStep2{
     margin-left: auto;
     margin-right: auto;
     display: block;
+    
 }
 
 .space_text{ 
@@ -343,6 +341,7 @@ div.containerStep2{
 
 .text_left{
     display: inline;
+    border: 1px solid black;
 
 }
 
@@ -516,9 +515,6 @@ div.containerStep5{
     display:var(--displayStep5);
 }
 
-body{
-    background-size: calc(var(--backgroundVisible) * 150dvh);
-}
 
 
 
@@ -821,11 +817,11 @@ input[type='range'] {
         font-size: 200%;
     }
 
-    .containerStep2 h1#novo_idioma{
+    h1#novo_idioma{
         width: 100%;
         margin-left: 0%;
         margin-right: auto;
-        font-size: 300%;
+        font-size: 30px;
     }
 
 
@@ -914,8 +910,10 @@ input[type='range'] {
 
     
  
-    .containerStep2 .login{
+    .login{
+        margin-top: -50px;
         width: 90dvw;
+        height: 105dvh;
         
     }
     
@@ -937,7 +935,7 @@ input[type='range'] {
 
     
     h1#novo_idioma{
-        margin-bottom: 0%;
+        margin-bottom: -20%;
     }
     #almostTitle {
       margin-top: 20%;
