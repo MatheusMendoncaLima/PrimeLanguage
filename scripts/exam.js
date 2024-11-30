@@ -60,90 +60,90 @@ const answers = {
     ],
     "spanish": [
         [ // a1
-            [["Elige la palabra correcta: 'Este es mi ___. (padre)'", "padre"], ["madre", "hermana", "padre", "amigo", "No sé"]],
+            [["Elige la palabra correcta: 'Este es mi ___. (pai)'", "padre"], ["madre", "hermana", "padre", "amigo", "No sé"]],
             [["Elige el artículo correcto: '___ manzana es roja.'", "Una"], ["Una", "Un", "La", "Cualquier", "No sé"]],
-            [["¿De qué color es el libro?", "Rojo"], ["Azul", "Rojo", "Verde", "Amarillo", "No sé"], "audios/Script A1.mp3"],
+            [["¿De qué color es el libro?", "Rojo"], ["Azul", "Rojo", "Verde", "Amarillo", "No sé"], "audios/Script A1 - Spanish.mp3"],
             [["Elige la forma correcta: 'Ella ___ café todas las mañanas.'", "bebe"], ["bebe", "bebes", "bebiendo", "bebió", "No sé"]],
             [["Elige la respuesta correcta: '¿Quién es el hermano de tu madre?'", "Tío"], ["Primo", "Padre", "Tío", "Hermana", "No sé"]]
         ],
         [ // a2
             [["Elige la forma correcta: 'Ayer, yo ___ en casa.'", "estuve"], ["estoy", "es", "estuve", "estábamos", "No sé"]],
             [["Elige el verbo correcto: 'Él siempre ___ el desayuno por la mañana.'", "come"], ["come", "comes", "comió", "comiendo", "No sé"]],
-            [["¿A qué hora regresa él a casa?", "2 p.m."], ["8 a.m.", "2 p.m.", "6 p.m.", "10 a.m.", "No sé"], "audios/Script A2.mp3"],
+            [["¿A qué hora regresa él a casa?", "2 p.m."], ["8 a.m.", "2 p.m.", "6 p.m.", "10 a.m.", "No sé"], "audios/Script A2 - Spanish.mp3"],
             [["Elige la preposición correcta: 'Ella vive ____ en una ciudad grande.'", "en"], ["sobre", "en", "en", "de", "No sé"]],
             [["Elige la respuesta correcta: 'Gira a la izquierda, luego ve ___.'", "recto"], ["atrás", "adelante", "derecha", "recto", "No sé"]]
         ],
         [ // b1
             [["Elige la preposición correcta: 'Estoy interesado ____ aprender inglés.'", "en"], ["en", "sobre", "en", "por", "No sé"]],
             [["Sarah fue al parque el sábado y llevó a su perro con ella. Se quedó allí hasta la tarde.\n ¿Dónde fue Sarah el sábado?", "Al parque"], ["Al centro comercial", "A la casa de su amiga", "Al parque", "A la playa", "No sé"]],
-            [["¿A qué hora termina él el trabajo?", "5 p.m."], ["9 a.m.", "1 p.m.", "3 p.m.", "5 p.m.", "No sé"], "audios/Script B1.mp3"],
+            [["¿A qué hora termina él el trabajo?", "5 p.m."], ["9 a.m.", "1 p.m.", "3 p.m.", "5 p.m.", "No sé"], "audios/Script B1 - Spanish.mp3"],
             [["Elige la opción correcta: 'Ella es ____ en matemáticas, así que ayuda a sus amigos.'", "buena"], ["terrible", "buena", "aburrida", "cansada", "No sé"]],
             [["Elige la forma verbal correcta: 'El año pasado, nosotros ___ una playa hermosa en Brasil.'", "visitamos"], ["visitamos", "visitamos", "visita", "estamos visitando", "No sé"]]
         ],
         [ // b2
             [["Completa la frase: 'Si lo hubiera sabido, yo ____ te habría dicho.'", "habría"], ["habría", "haré", "podría", "debería", "No sé"]],
-            [["¿Cuál es el objetivo del nuevo proyecto?", "Reducir la contaminación"], ["Aumentar la contaminación", "Limpiar toda la ciudad", "Reducir la contaminación", "Expandir la ciudad", "No sé"]],
-            [["¿Qué prefiere hacer ella en el verano?", "Quedarse en lugares frescos"], ["Quedarse en lugares frescos", "Ir a la playa", "Nadar en la piscina", "Viajar al extranjero", "No sé"], "audios/Script B2.mp3"],
+            [["'El nuevo proyecto es ambicioso y pretende reducir la contaminación de la ciudad en un 30% en los próximos cinco años.' ¿Cuál es el objetivo del nuevo proyecto?", "Reducir la contaminación"], ["Aumentar la contaminación", "Limpiar toda la ciudad", "Reducir la contaminación", "Expandir la ciudad", "No sé"]],
+            [["¿Qué prefiere hacer ella en el verano?", "Quedarse en lugares frescos"], ["Quedarse en lugares frescos", "Ir a la playa", "Nadar en la piscina", "Viajar al extranjero", "No sé"], "audios/Script B2 - Spanish.mp3"],
             [["Elige la opción correcta: 'Deberías ___ ahora si quieres tomar el tren.'", "salir"], ["no puedes", "deberías", "no deberías", "quizá no", "No sé"]],
             [["Elige la respuesta correcta: 'Después de la discusión, finalmente decidieron ___ y perdonarse.'", "reconciliarse"], ["esperar", "buscar", "reconciliarse", "tomar el control", "No sé"]]
         ],
         [ // c1
             [["Elige la opción correcta: 'A pesar de ____ el examen, fue aceptado en el programa.'", "fallar"], ["fallar", "fallo", "fallando", "fallado", "No sé"]],
-            [["¿Cuál es el objetivo principal de la iniciativa de la empresa?", "Reducir residuos"], ["Aumentar la producción de residuos", "Limpiar toda la ciudad", "Reducir residuos", "Expandir el negocio", "No sé"]],
-            [["¿Cuál es una desventaja de trabajar desde casa mencionada en el audio?", "Puede llevar al aislamiento"], ["Aumenta la productividad", "Puede llevar al aislamiento", "Ahorra tiempo", "Mejora el enfoque", "No sé"], "audios/Script C1.mp3"],
+            [["'La nueva iniciativa de la empresa se centra en la sostenibilidad y tiene como objetivo reducir los residuos implementando prácticas de reciclaje en todas las sucursales.' ¿Cuál es el objetivo principal de la iniciativa de la empresa?", "Reducir residuos"], ["Aumentar la producción de residuos", "Limpiar toda la ciudad", "Reducir residuos", "Expandir el negocio", "No sé"]],
+            [["¿Cuál es una desventaja de trabajar desde casa mencionada en el audio?", "Puede llevar al aislamiento"], ["Aumenta la productividad", "Puede llevar al aislamiento", "Ahorra tiempo", "Mejora el enfoque", "No sé"], "audios/Script C1 - Spanish.mp3"],
             [["Elige la forma correcta: 'El proyecto ____ completado para fin de año.'", "será"], ["será", "estaba siendo", "es", "son", "No sé"]],
             [["Elige la mejor opción: 'Aunque la decisión fue impopular, se consideró ____ para el éxito de la empresa.'", "necesaria"], ["agradable", "necesaria", "opcional", "trivial", "No sé"]]
         ],
         [ // c2
             [["Elige la frase más adecuada: 'El proyecto está ___ retrasado, ya que el equipo aún está recopilando datos.'", "provisionalmente"], ["provisionalmente", "circunstancialmente", "relativamente", "definitivamente", "No sé"]],
-            [["¿Cuál es uno de los propósitos de la expresión artística?", "Reflejar los valores de la sociedad"], ["Reflejar los valores de la sociedad", "Entretener sin propósito", "Evitar temas controvertidos", "Seguir normas tradicionales", "No sé"]],
-            [["¿Qué desafío se menciona respecto a la tecnología?", "Hace más difícil mantener conexiones personales"], ["Mejora las conexiones personales", "Es demasiado costosa", "Hace más difícil mantener conexiones personales", "No tiene efecto en las relaciones", "No sé"], "audios/Script C2.mp3"],
+            [["'La expresión artística es a menudo un reflejo de los valores sociales, desafía las normas y provoca el pensamiento en el público.' ¿Cuál es uno de los propósitos de la expresión artística?", "Reflejar los valores de la sociedad"], ["Reflejar los valores de la sociedad", "Entretener sin propósito", "Evitar temas controvertidos", "Seguir normas tradicionales", "No sé"]],
+            [["¿Qué desafío se menciona respecto a la tecnología?", "Hace más difícil mantener conexiones personales"], ["Mejora las conexiones personales", "Es demasiado costosa", "Hace más difícil mantener conexiones personales", "No tiene efecto en las relaciones", "No sé"], "audios/Script C2 - Spanish.mp3"],
             [["Elige la respuesta correcta: 'El autor ___ luz sobre un tema que a menudo se pasa por alto en la sociedad.'", "arroja"], ["arroja", "muestra", "trae", "revela", "No sé"]],
             [["Completa la frase con la opción más adecuada: 'Después de años de investigación, la científica finalmente ___ la teoría que había desconcertado a sus colegas durante décadas.'", "validó"], ["validó", "aproximó", "ignoró", "cuestionó", "No sé"]]
         ]
     ],
     "french": [
         [ // A1 (Iniciante absoluto)
-            [["Escolha a palavra correta: 'Este é o meu ___. (pai)'", "C'est mon ___ (père)"], ["mère", "sœur", "père", "ami", "Je ne sais pas"]],
-            [["Escolha o artigo correto: '___ maçã é vermelha.'", "___ pomme est rouge."], ["Une", "Un", "La", "N'importe quel", "Je ne sais pas"]],
-            [["De que cor é o livro?", "De quelle couleur est le livre ?"], ["Bleu", "Rouge", "Vert", "Jaune", "Je ne sais pas"], "audios/Script A1.mp3"],
-            [["Escolha a forma correta: 'Ela ___ café todas as manhãs.'", "Elle ___ du café tous les matins."], ["boit", "bois", "buvant", "bu", "Je ne sais pas"]],
-            [["Escolha a resposta correta: 'Quem é o irmão da sua mãe?'", "Qui est le frère de votre mère ?"], ["Cousin", "Père", "Oncle", "Sœur", "Je ne sais pas"]]
+            [["Escolha a palavra correta: 'C'est mon ___. (pai)'", "père"], ["mère", "sœur", "père", "ami", "Je ne sais pas"]],
+            [["Escolha o artigo correto: '___ pomme est rouge.'", "Une"], ["Une", "Un", "La", "N'importe quel", "Je ne sais pas"]],
+            [["De quelle couleur est le livre ?", "Rouge"], ["Bleu", "Rouge", "Vert", "Jaune", "Je ne sais pas"], "audios/Script A1 - French.mp3"],
+            [["Escolha a forma correta: 'Elle ___ du café tous les matins.'", "boit"], ["boit", "bois", "buvant", "bu", "Je ne sais pas"]],
+            [["Escolha a resposta correta: 'Qui est le frère de ta mère ?'", "Oncle"], ["Cousin", "Père", "Oncle", "Sœur", "Je ne sais pas"]]
         ],
         [ // A2 (Básico)
-            [["Escolha a forma correta: 'Ontem, eu ___ em casa.'", "Hier, j'___ chez moi."], ["suis", "est", "étais", "étions", "Je ne sais pas"]],
-            [["Escolha o verbo correto: 'Ele ___ sempre o café da manhã de manhã.'", "Il ___ toujours le petit déjeuner le matin."], ["mange", "manges", "mangé", "mangeant", "Je ne sais pas"]],
-            [["A que horas ele volta para casa?", "À quelle heure revient-il à la maison ?" ], ["8h00", "14h00", "18h00", "10h00", "Je ne sais pas"], "audios/Script A2.mp3"],
-            [["Escolha a preposição correta: 'Ela mora ____ uma grande cidade.'", "Elle habite ____ une grande ville."], ["sur", "à", "dans", "de", "Je ne sais pas"]],
-            [["Escolha a resposta correta: 'Vire à esquerda, depois vá ___.'", "Tournez à gauche, puis allez __."], ["en arrière", "devant", "à droite", "tout droit", "Je ne sais pas"]]
+            [["Escolha a forma correta: 'Hier, j'___ à la maison.'", "étais"], ["suis", "est", "étais", "étions", "Je ne sais pas"]],
+            [["Escolha o verbo correto: 'Il ____ toujours son petit déjeuner le matin.'", "mange"], ["mange", "manges", "mangé", "mangeant", "Je ne sais pas"]],
+            [["A quelle heure rentre-t-il à la maison ?", "14h00" ], ["8h00", "14h00", "18h00", "10h00", "Je ne sais pas"], "audios/Script A2 - French.mp3"],
+            [["Escolha a preposição correta: 'Elle vit ____ une grande ville'", "dans"], ["sur", "à", "dans", "de", "Je ne sais pas"]],
+            [["Escolha a resposta correta: 'Tournez à gauche, puis continuez ___.'", "tout droit."], ["en arrière", "devant", "à droite", "tout droit", "Je ne sais pas"]]
         ],
         [ // B1 (Intermediário)
-            [["Escolha a preposição correta: 'Eu estou interessado ____ aprender inglês.'", "Je suis intéressé ____ apprendre l'anglais."], ["à", "sur", "dans", "par", "Je ne sais pas"]],
-            [["Sarah foi ao parque no sábado e levou seu cachorro com ela. Ela ficou lá até a noite. Onde Sarah foi no sábado?", "Sarah est allée au parc samedi et a emmené son chien avec elle. Elle y est restée jusqu'au soir.\n Où est allée Sarah samedi ?"], ["Au centre commercial", "Chez son amie", "Au parc", "À la plage", "Je ne sais pas"]],
-            [["A que horas ele termina de trabalhar?", "À quelle heure finit-il de travailler ?" ], ["9h00", "13h00", "15h00", "17h00", "Je ne sais pas"], "audios/Script B1.mp3"],
-            [["Escolha a opção correta: 'Ela é ____ em matemática, então ela ajuda seus amigos.'", "Elle est ____ en mathématiques, alors elle aide ses amis."], ["terrible", "douée", "ennuyée", "fatiguée", "Je ne sais pas"]],
-            [["Escolha a forma correta do verbo: 'No ano passado, nós ___ uma linda praia no Brasil.'", "L'année dernière, nous ___ une belle plage au Brésil."], ["avons visité", "visitons", "visite", "visitons en train de", "Je ne sais pas"]]
+            [["Escolha a preposição correta: 'Je suis intéressé _ apprendre l'anglais.'", "à"], ["à", "sur", "dans", "par", "Je ne sais pas"]],
+            [["Sarah est allée au parc samedi et a emmené son chien avec elle. Elle y est restée jusqu'à la nuit. \n Où est allée Sarah samedi ?", "Au parc"], ["Au centre commercial", "Chez son amie", "Au parc", "À la plage", "Je ne sais pas"]],
+            [["À quelle heure finit-il le travail ?", "17h00" ], ["9h00", "13h00", "15h00", "17h00", "Je ne sais pas"], "audios/Script B1 - French.mp3"],
+            [["Escolha a opção correta: 'Elle est ____ en maths, alors elle aide ses amis'", "bonne"], ["terrible", "bonne", "ennuyée", "fatiguée", "Je ne sais pas"]],
+            [["Escolha a forma correta do verbo: 'L'année dernière, nous _____ une belle plage au Brésil.'", "avons visité"], ["avons visité", "visitons", "visite", "visitons en train de", "Je ne sais pas"]]
         ],
         [ // B2 (Intermediário-avançado)
-            [["Complete a frase: 'Se eu soubesse, eu ____ te diria.'", "Si je l'avais su, je ____ te l'aurais dit."], ["aurais", "ferai", "pourrais", "devrais", "Je ne sais pas"]],
-            [["Qual é o objetivo do novo projeto?", "Quel est l'objectif du nouveau projet ?"], ["Augmenter la pollution", "Nettoyer toute la ville", "Réduire la pollution", "Étendre la ville", "Je ne sais pas"]],
-            [["O que ela prefere fazer no verão?", "Que préfère-t-elle faire en été ?"], ["Rester dans des endroits frais", "Aller à la plage", "Nager dans la piscine", "Voyager à l'étranger", "Je ne sais pas"], "audios/Script B2.mp3"],
-            [["Escolha a opção correta: 'Você ____ partir agora se quiser pegar o trem.'", "Tu ____ partir maintenant si tu veux attraper le train."], ["ne peux pas", "devrais", "ne devrais pas", "peut-être pas", "Je ne sais pas"]],
-            [["Escolha a resposta correta: 'Depois da briga, eles finalmente decidiram ____ e se perdoar.'", "Après la dispute, ils ont finalement décidé de ____ et de se pardonner."], ["tenir", "chercher", "se réconcilier", "prendre le contrôle", "Je ne sais pas"]]
+            [["Complete a frase: 'Si je l'avais su, je ____ te l'aurais dit.'", "aurais"], ["aurais", "ferai", "pourrais", "devrais", "Je ne sais pas"]],
+            [["Le nouveau projet est ambitieux et vise à réduire la pollution de la ville de 30 % au cours des cinq prochaines années. Quel est l'objectif du nouveau projet ?", "Réduire la pollution"], ["Augmenter la pollution", "Nettoyer toute la ville", "Réduire la pollution", "Étendre la ville", "Je ne sais pas"]],
+            [["Que préfère-t-elle faire en été ?", "Restez dans des endroits plus froids"], ["Restez dans des endroits plus froids", "Aller à la plage", "Nager dans la piscine", "Voyager à l'étranger", "Je ne sais pas"], "audios/Script B2 - French.mp3"],
+            [["Escolha a opção correta: 'Vous _____ partir maintenant si vous voulez prendre le train..'", "devriez"], ["ne peux pas", "devriez", "ne devrais pas", "peut-être pas", "Je ne sais pas"]],
+            [["Escolha a resposta correta: 'Après la dispute, ils ont finalement décidé de ______ et de se pardonner.'", "se réconcilier"], ["tenir", "chercher", "se réconcilier", "prendre le contrôle", "Je ne sais pas"]]
         ],
         [ // C1 (Avançado)
-            [["Escolha a opção correta: 'Apesar ____ do exame, ele foi aceito no programa.'", "Malgré ____ l'examen, il a été accepté dans le programme."], ["avoir échoué", "échouer", "échouant", "échoué", "Je ne sais pas"]],
-            [["Qual é o objetivo principal da iniciativa da empresa?", "Quel est l'objectif principal de l'initiative de l'entreprise ?"], ["Augmenter la production de déchets", "Nettoyer toute la ville", "Réduire les déchets", "Étendre son activité", "Je ne sais pas"]],
-            [["Qual é uma desvantagem do home office mencionada no áudio?", "Quel est un inconvénient du télétravail mentionné dans l'audio ?"], ["Cela augmente la productivité", "Cela peut mener à l'isolement", "Cela fait gagner du temps", "Cela améliore la concentration", "Je ne sais pas"], "audios/Script C1.mp3"],
-            [["Escolha a forma correta: 'O projeto ____ terminado até o final do ano.'", "Le projet ____ terminé d'ici la fin de l'année."], ["sera", "était en cours", "est", "sont", "Je ne sais pas"]],
-            [["Escolha a melhor opção: 'Embora a decisão tenha sido impopular, ela foi considerada ____ para o sucesso da empresa.'", "Bien que la décision ait été impopulaire, elle a été jugée ____ pour le succès de l'entreprise."], ["agréable", "nécessaire", "facultative", "banale", "Je ne sais pas"]]
+            [["Escolha a opção correta: 'Malgré ____ à l’examen, il a été accepté au programme.'", "son échec"], ["son échec", "échouer", "échouant", "échoué", "Je ne sais pas"]],
+            [["'La nouvelle initiative de l’entreprise met l’accent sur la durabilité et vise à réduire les déchets en mettant en œuvre des pratiques de recyclage dans toutes les succursales.' Quel est l’objectif principal de l’initiative de l’entreprise ?", "Réduire les déchets"], ["Augmenter la production de déchets", "Nettoyer toute la ville", "Réduire les déchets", "Étendre son activité", "Je ne sais pas"]],
+            [["Quel est l’un des inconvénients du travail à domicile mentionné dans l’audio ?", "Cela peut mener à l'isolement"], ["Cela augmente la productivité", "Cela peut mener à l'isolement", "Cela fait gagner du temps", "Cela améliore la concentration", "Je ne sais pas"], "audios/Script C1 - French.mp3"],
+            [["Escolha a forma correta: 'Le projet ____ achevé d'ici la fin de l'année.'", "sera"], ["sera", "était en cours", "est", "sont", "Je ne sais pas"]],
+            [["Escolha a melhor opção: 'Bien que la décision ait été impopulaire, elle a été jugée ______ au succès de l’entreprise.'", "nécessaire"], ["agréable", "nécessaire", "facultative", "banale", "Je ne sais pas"]]
         ],
         [ // C2 (Fluente)
-            [["Escolha a expressão mais apropriada: 'O projeto está ___ atrasado, pois a equipe ainda está reunindo dados.'", "Le projet est ___ retardé, car l'équipe rassemble encore des données."], ["provisoirement", "de manière circonstancielle", "relativement", "définitivement", "Je ne sais pas"]],
-            [["Qual é um dos objetivos da expressão artística?", "Quel est l'un des objectifs de l'expression artistique ?"], ["Réfléter les valeurs sociétales", "Divertir sans but", "Éviter les sujets controversés", "Suivre les normes traditionnelles", "Je ne sais pas"]],
-            [["Qual desafio é mencionado em relação à tecnologia?", "Quel défi est mentionné concernant la technologie ?"], ["Elle améliore les connexions personnelles", "Elle est trop coûteuse", "Elle rend les connexions personnelles plus difficiles à maintenir", "Elle n'a aucun effet sur les relations", "Je ne sais pas"], "audios/Script C2.mp3"],
-            [["Escolha a resposta correta: 'O autor ___ luz sobre um problema frequentemente negligenciado na sociedade.'", "L'auteur ___ lumière sur un problème souvent négligé dans la société."], ["jette", "montre", "apporte", "révèle", "Je ne sais pas"]],
-            [["Complete a frase com a opção mais apropriada: 'Após anos de pesquisa, a cientista finalmente ___ a teoria que havia desconcertado seus pares por décadas.'", "Après des années de recherche, la scientifique a finalement ___ la théorie qui avait déconcerté ses pairs pendant des décennies."], ["validé", "approximé", "ignoré", "remis en question", "Je ne sais pas"]]
+            [["Escolha a expressão mais apropriada: 'Le projet est ______ retardé, car l'équipe est toujours en train de collecter des données.'", "provisoirement"], ["provisoirement", "de manière circonstancielle", "relativement", "définitivement", "Je ne sais pas"]],
+            [["'L'expression artistique est souvent le reflet des valeurs sociétales, elle remet en question les normes et suscite la réflexion chez le public.' Selon le texte, quel est l'un des objectifs de l'expression artistique ?", "Réfléter les valeurs sociétales"], ["Réfléter les valeurs sociétales", "Divertir sans but", "Éviter les sujets controversés", "Suivre les normes traditionnelles", "Je ne sais pas"]],
+            [["Quel défi est mentionné concernant la technologie ?", "Elle rend les connexions personnelles plus difficiles à maintenir"], ["Elle améliore les connexions personnelles", "Elle est trop coûteuse", "Elle rend les connexions personnelles plus difficiles à maintenir", "Elle n'a aucun effet sur les relations", "Je ne sais pas"], "audios/Script C2 - French.mp3"],
+            [["Escolha a resposta correta: 'L’auteur _____ lumière un problème souvent négligé dans la société.'", "met en"], ["jette", "met en", "apporte", "révèle", "Je ne sais pas"]],
+            [["Complete a frase com a opção mais apropriada: 'Après des années de recherche, la scientifique a finalement _____ la théorie qui intriguait ses pairs depuis des décennies.'", "validé"], ["validé", "approximé", "ignoré", "remis en question", "Je ne sais pas"]]
         ]
     ],
     "chinese": [
