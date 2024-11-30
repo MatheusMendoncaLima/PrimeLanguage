@@ -118,7 +118,17 @@ if(Object.keys(dict).length == 0){
     }else{
         r.style.setProperty('--displayStep5', "block");
         growBarValue(65,100)
-        STEP5_START_BUTTON.href+="?language="+language+"&level=a1"
+        const proficiencyLevels = {"english" : ["a1","a2","b1","b2","c1","c2"],
+            "spanish" : ["a1","a2","b1","b2","c1","c2"],
+            "french" : ["a1","a1","b1","b2","c1","c2"],
+            "chinese" : ["hsk-1","hsk-2"," hsk-3"," hsk-4"," hsk-5"," hsk-6"],
+            "japanese" : ["n5","n4","n3","n2","n1"],
+            "german" : ["a1","a2","b1","b2","c1","c2"],
+            "korean" : ["topik i (nivel 1)","topik i (nivel 2)"," topik ii (nivel 3)"," topik ii (nivel 4)","topik ii (nivel 5)","topik ii (nivel 6)"],
+            "italian" : ["a1","a2","b1","b2","c1","c2"],
+            "russian" : ["a1","a2","b1","b2","c1","c2"]
+}
+        STEP5_START_BUTTON.href+="?language="+language+"&level="+proficiencyLevels[language][0]
 
     }
 
